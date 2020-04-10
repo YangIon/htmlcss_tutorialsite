@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    min-height: 100%;
+    line-height: 1.4;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-section > h1::after {
+    display: block;
+    content: "living on the lighter side of things";
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 1em;
+}
+
+.welcome-section > img {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.about-section {
+    display: flex;
+    background-color: #006699;
+    color: #eeeeee;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+    padding: 100px 150px;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+@media only screen and (min-width: 1024px) {
+    .about-section {
+        padding: 100px 400px;
+    }
+}
+
+.work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #004080;
+}
+
+.work-section > h2 {
+    border-bottom: 2px solid #eee;
+    color: #eee;
+}
+
+.group-element-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    /* flex-flow: row wrap; */
+}
+
+@media only screen and (min-width: 1024px) {
+    .group-element-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
+}
+
+.element-card {
+    /* flex: 1;
+    flex-basis: 50%; */
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.element-card > span {
+    min-width: 425px;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
