@@ -13,22 +13,22 @@
         <!-- For the welcome-section, go over plain color to radial gradient in CSS section -->
         <nav class="navbar">
             <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">My Work</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#work-section">My Work</a></li>
+                <li><a href="#contact-section">Contact Me</a></li>
             </ul>
         </nav>
         <section class="welcome-section">
             <img src="img/yang.jpeg">
             <h1 style="color: white; font-size: 35px;text-align: center;">Yang Chen</h1>
         </section>
-        <section class="about-section">
+        <section id="about-section" class="about-section">
             <p>
                 My name is Yang Chen. Boxer, software developer, nutrition aficionado. I'm here to teach you how to make
                 this website that you're looking at right now! That's incredibly meta.
             </p>
         </section>
-        <section class="work-section">
+        <section id="work-section" class="work-section">
             <h2>These random images are representing projects!</h2>
             <div class="group-element-container">
                 <div class="element-card">
@@ -57,13 +57,21 @@
                 </div> 
             </div>
         </section>
-        <section class="contact-section">
+        <section id="contact-section" class="contact-section">
             <h2 style="font-size: 40px;text-align: center;">
                 Let's get in touch!
             </h2>
-            <div class="link-bar">
-                <!-- <object type="image/svg+xml" data="img/github.svg"></object> -->
-            </div>
+            <form>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="This is a text input">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="This is a text input">
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="example@live.unc.edu">
+                <label for="message">Leave a Message!</label>
+                <textarea name="message" row="20" cols="30"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </div>
 </body>
