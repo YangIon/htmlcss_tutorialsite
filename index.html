@@ -6,32 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML/CSS Tutorial</title>
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body style="padding: 50px; font-size: 20px; line-height: 1.6;">
-    <h1>Brief Practical Crash Course in HTML/CSS</h1>
-    <h2>From Bare Bones Page to Online Website</h2>
+<body>
     <div class="container">
-        <div class="section0">
-            <p>
-                I wanted to make this webpage for the
-                hobbyists/students/I-avoid-computers-and-code-because-they-are-so-confusing advocates (and specifically future educators who might be interested in having some nice tools in their repertoire) that don't know
-                too much about programming to help them realize, mainly, three things:
-            </p>
-            <ul>
-                <li>Programming doesn't have to be scary. There's actually a lot of intuition to be found in it once you
-                    understand some basics.</li>
-                <li>Programming can be fun. There's a lot of useful and creative outlets that it can be used for which
-                    is
-                    why I specifically chose HTML/CSS--I believe it represents the most aesthetic view of writing code.
-                </li>
-                <li>I suppose this is a derivative of the last point, but programming is an art. This is something I'm
-                    still
-                    learning, but the deeper you go with it the more you realize there are elements of design,
-                    creativity,
-                    and exploration in programming.</li>
-            </ul>
-            <div>
+        <div class="article-container">
+            <h1>Brief Practical Crash Course in HTML/CSS</h1>
+            <h2>From Bare Bones Page to Online Website</h2>
+            <section class="section0">
+                <p>
+                    I wanted to make this webpage for the
+                    hobbyists/students/I-avoid-computers-and-code-because-they-are-so-confusing advocates (and
+                    specifically
+                    future educators who might be interested in having some nice tools in their repertoire) that don't
+                    know
+                    too much about programming to help them realize, mainly, three things:
+                </p>
+                <ul>
+                    <li>Programming doesn't have to be scary. There's actually a lot of intuition to be found in it once
+                        you
+                        understand some basics.</li>
+                    <li>Programming can be fun. There's a lot of useful and creative outlets that it can be used for
+                        which
+                        is
+                        why I specifically chose HTML/CSS--I believe it represents the most aesthetic view of writing
+                        code.
+                    </li>
+                    <li>I suppose this is a derivative of the last point, but programming is an art. This is something
+                        I'm
+                        still
+                        learning, but the deeper you go with it the more you realize there are elements of design,
+                        creativity,
+                        and exploration in programming.</li>
+                </ul>
                 <p>
                     Before I go any further, I want you to know what we're even working with here and <i>why</i>. What
                     is
@@ -80,6 +88,8 @@
                         and
                         still styles the HTML elements.</li>
                 </ul>
+            </section>
+            <section class="motivation">
                 <h3>
                     Motivation
                 </h3>
@@ -113,22 +123,134 @@
                     able to share this with you because I believe technology, when used right, can create a massive,
                     positive impact for public education.
                 </p>
-            </div>
-            <div class="section1">
                 <p>
-                    HTML and CSS are the bread and butter of creating a website. There is also a cross platform scripting 
+                    HTML and CSS are the bread and butter of creating a website. There is also a cross platform
+                    scripting
                     language
                     called JavaScript which defines the <b>behaviour</b> of a website, but we will focus on HTML and CSS
                     for
                     now because there's already so much you can do with these two tools.
                 </p>
-            </div>
-            <div class="section2">
+            </section>
+            <section class="section2">
+                <h3>Our End Goal</h3>
+                <p>
+                    The final goal for this tutorial is to get you to build a personal online portfolio for yourself. I
+                    have
+                    a few sample images of what the final product will eventually look like for you to see, but you can
+                    also
+                    check out <a href="example/">the website</a> itself and play around with it.
+                </p>
+                <div class="image-container">
+                    <img>
+                </div>
+                <p>
+                    Our portfolio represents a single page that showcases all of the glorious work we've labored on!
+                    You'll
+                    notice there are several important components that we will be building for our website:
+                </p>
+                <ul>
+                    <li><b>Welcome Section</b> with our title and a showcase of our lovely visage</li>
+                    <li><b>Navigation Bar</b> with links that move to different sections of the page</li>
+                    <li><b>About Section</b> with a small blurb of who we are</li>
+                    <li><b>Gallery</b> of our "work" with several images that have scroll-over descriptions of our work
+                    </li>
+                    <li><b>Contact Section</b> with a dummy form to get into contact with our audience</li>
+                </ul>
+                <p>
+                    And this is what we're starting with!
+                </p>
+                <div class="blank-box-container">
+                    <span class="blank-box"></span>
+                </div>
+                <p>
+                    That's right. From blank page to a full-fledged online portfolio. Let's get started!
+                </p>
+            </section>
+            <section class="html-tutorial">
+                <h3>Software Needed</h3>
+                <p>
+                    The software we will be using to build our HTML/CSS project is called <a
+                        href="https://glitch.com">Glitch</a>. Glitch is an interactive programming environment that
+                    allows
+                    you to edit and run code directly on your internet browser, making it very convenient for our
+                    purpose
+                    since we can skip any further setup process.
+                </p>
+                <p>
+                    Overall, it's a big time-saver and you can even download your project straight off of the
+                    environment
+                    when you are done developing! Go ahead and make your way over to <a
+                        href="https://glitch.com">Glitch</a>
+                    and click on <i><b>New Project</b></i>, then hit <i><b>hello-webpage</b></i> to get started. You
+                    should
+                    see a couple screens like the ones provided below.
+                </p>
+                <figure>
+                    <div class="image-container">
+                        <img src="img/glitch_home.png">
+                        <img src="img/2020-04-16-1587076424_screenshot_943x938.jpg">
+                    </div>
+                    <figcaption>Home screen and project screen once you navigate to 'hello-webpage'</figcaption>
+                </figure>
+                <p>
+                    You should find a list, or <b>directory</b>, of files on the left side of the project screen. Click
+                    on <code>index.html</code> as this will be where all of our HTML is going to take place.
+                </p>
+                <p>
+                    Notice that the file extension is <code>.html</code> so this will allow web browsers and computers
+                    to process our file as an HTML document! We could actually create a new file on our computer with
+                    this extension and it would be processed the same way.
+                </p>
+                <p>
+                    Here's the page you should be seeing:
+                </p>
+                <figure>
+                    <div class="image-container">
+                        <img src="img/glitch_indexpage.jpg" alt="">
+                    </div>
+                    <figcaption>The 'index.html' page where all our HTML code will be written</figcaption>
+                </figure>
+                <p>
+                    There are several important components on this page I would like to highlight and will make it easier for you to use the editor.
+                </p>
+                <figure>
+                    <div class="image-container">
+                        <img src="img/glitch_indexpage_edited.png" alt="">
+                    </div>
+                </figure>
+                <ul>
+                    <li>The pink region represents your editor where you will type all of your code</li>
+                    <li>The green region is the <b><i>Show</i></b> button which will allow you to preview what your page looks like in the present state of your code</li>
+                    <li>The blue region is your directory list which is a hierarchy of how your files are organized</li>
+                </ul>
+                <ul>
 
-            </div>
-            <div class="glossary">
+                </ul>
+                <p>
+                    Even if this looks daunting to you, then rest assured, you will come out of this knowing every
+                    single bit of what is on the page right now. We're actually going to start off clearing a few parts of the page to get a minimal HTML page running.
+                </p>
+                <ol>
+                    <li>Highlight all of the text in the editor from <code class="prettyprint">&lth1&gt...</code> on <b>Line 16</b> to <code class="prettyprint lang-html">...&lt/script&gt</code> on <b>Line 25</b></li>
+                    <li><b>Backspace</b> it away!</li>
+                </ol>
+                <figure>
+                    <div class="image-container">
+                       <img src="img/glitch_indexpage_basic.jpg" alt=""> 
+                    </div>
+                    <figcaption>Your page after removing the elements in the 'body' section</figcaption>
+                </figure>
+                <h3>The Basic, Minimal Structure of HTML</h3>
+                <p>
+                    Right now, you are looking at the bare minimum for an HTML page to run. If you preview your page with the <b><i>Show</i></b> button then you should see a blank, white page. The tab title will be 'Hello!'.
+                </p>
+            </section>
+            <section class="section3">
+            </section>
+            <section class="glossary">
 
-            </div>
+            </section>
         </div>
     </div>
 </body>
