@@ -164,7 +164,7 @@
                     <span class="blank-box"></span>
                 </div>
                 <p>
-                    That's right. From blank page to a full-fledged online portfolio. Let's get started!
+                    That's right. From blank page to a full-fledged online portfolio. Let's get started learning!
                 </p>
             </section>
             <section class="html-tutorial">
@@ -212,7 +212,8 @@
                     <figcaption>The 'index.html' page where all our HTML code will be written</figcaption>
                 </figure>
                 <p>
-                    There are several important components on this page I would like to highlight and will make it easier for you to use the editor.
+                    There are several important components on this page I would like to highlight and will make it
+                    easier for you to use the editor.
                 </p>
                 <figure>
                     <div class="image-container">
@@ -221,7 +222,8 @@
                 </figure>
                 <ul>
                     <li>The pink region represents your editor where you will type all of your code</li>
-                    <li>The green region is the <b><i>Show</i></b> button which will allow you to preview what your page looks like in the present state of your code</li>
+                    <li>The green region is the <b><i>Show</i></b> button which will allow you to preview what your page
+                        looks like in the present state of your code</li>
                     <li>The blue region is your directory list which is a hierarchy of how your files are organized</li>
                 </ul>
                 <ul>
@@ -229,21 +231,90 @@
                 </ul>
                 <p>
                     Even if this looks daunting to you, then rest assured, you will come out of this knowing every
-                    single bit of what is on the page right now. We're actually going to start off clearing a few parts of the page to get a minimal HTML page running.
+                    single bit of what is on the page right now. We're actually going to start off clearing a few parts
+                    of the page to get a minimal HTML page running.
                 </p>
                 <ol>
-                    <li>Highlight all of the text in the editor from <code class="prettyprint">&lth1&gt...</code> on <b>Line 16</b> to <code class="prettyprint lang-html">...&lt/script&gt</code> on <b>Line 25</b></li>
+                    <li>Highlight all of the text in the editor from <code class="prettyprint">&lth1&gt...</code> on
+                        <b>Line 16</b> to <code class="prettyprint lang-html">...&lt/script&gt</code> on <b>Line 25</b>
+                    </li>
                     <li><b>Backspace</b> it away!</li>
                 </ol>
                 <figure>
                     <div class="image-container">
-                       <img src="img/glitch_indexpage_basic.jpg" alt=""> 
+                        <img src="img/glitch_indexpage_basic.jpg" alt="">
                     </div>
                     <figcaption>Your page after removing the elements in the 'body' section</figcaption>
                 </figure>
                 <h3>The Basic, Minimal Structure of HTML</h3>
                 <p>
-                    Right now, you are looking at the bare minimum for an HTML page to run. If you preview your page with the <b><i>Show</i></b> button then you should see a blank, white page. The tab title will be 'Hello!'.
+                    Right now, you are looking at the bare minimum for an HTML page to run. If you preview your page
+                    with the <b><i>Show</i></b> button then you should see a blank, white page. If you look up at your
+                    tabs, the tab title will be <b>Hello!</b>.
+                </p>
+                <p>
+                    So what's going on here? Somehow the code we have written so far is generating this page with a
+                    title that is eerily similar to the text written in the <code
+                        class="prettyprint">&lttitle&gt ...</code> <code class="prettyprint">&lt/title&gt</code>
+                    section.
+                </p>
+                <p>
+                    Let's break it down piece-by-piece!
+                    <ul>
+                        <li><code class="prettyprint lang-html">&lt!DOCTYPE html&gt</code> is telling our browser to
+                            parse our document as an HTML file</li>
+                        <li><code class="prettyprint">&lthtml&gt</code> is an element that will always be the root, or
+                            most broad level, of our document</li>
+                        <li><code class="prettyprint">&lthead&gt</code> gives meta information about our webpage like
+                            page description, document author, etc. Search engines can use this information to help find
+                            your website. You won't see this metadata show up on your page, but it can be super
+                            useful--there are coders whose entire job is to optimize for search engine relevancy!</li>
+                        <li><code class="prettyprint">&lttitle&gt</code> is a tag for a title element on our webpage
+                            which will show up on the tab like was previously mentioned</li>
+                        <li>The <code class="prettyprint">&ltbody&gt</code> tag is where things get interesting for
+                            building visual elements since it captures all the visible content that we will provide!
+                        </li>
+                    </ul>
+                    For now, let's try changing the text in the title tag to <b>My Portfolio</b> and writing whatever we
+                    want in the area bounded by <code class="prettyprint">&ltbody&gt...&lt/body&gt</code>
+                    <figure>
+                        <div class="image-container">
+                            <img src="img/glitch_indexpage_edited2.jpg" alt="">
+                            <img src="img/glitch_changetitle_result.jpg" alt="">
+                        </div>
+                        <figcaption>You've made the first modifications to your website!</figcaption>
+                    </figure>
+                </p>
+                <p>
+                    <h3>Tags</h3>
+                    We're about to start handling the big work of making our portfolios, but there's one more thing
+                    that's absolutely crucial to understand before we begin.
+                </p>
+                <p>
+                    I've mentioned <b><i>tags</i></b> a few times and you might be wondering what those are. Tags are
+                    essentially labels for our elements, denoted by angle brackets. At this point, you've already seen
+                    several appear in our basic document and I'd like for you to get an idea of how to write them as
+                    well as a few examples that we will be using to make our portfolio.
+                    <ul>
+                        <li>Most tags come <b>in pairs</b> with the closing tag containing a <code
+                                class="prettyprint">/</code>. An example of this is <code
+                                class="prettyprint">&lttitle&gt...&lt/title&gt</code> or <code
+                                class="prettyprint">&ltbody&gt...&lt/body&gt</code></li>
+                        <li>This starting and ending tag formulation will tell the browser where your element section
+                            starts and begins with all the content going in-between</li>
+                    </ul>
+                </p>
+                <p>
+                    And here are a few important tags we'll be working with:
+                    <ul>
+                        <li><code class="prettyprint">&ltdiv&gt</code>: One of the most general tags, this defines a
+                            division or section of our HTML document</li>
+                        <li><code class="prettyprint">&ltp&gt</code>: A paragraph element. In HTML, you won't be able to
+                            change how your text looks the usual way--adding extra spaces or lines in your code--and
+                            this tag will help you write the text for browsers</li>
+                        <li><code class="prettyprint"></code></li>
+                        <li><code class="prettyprint"></code></li>
+                    </ul>
                 </p>
             </section>
             <section class="section3">
