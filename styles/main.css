@@ -7,6 +7,11 @@ html, body {
     color: #000;
 }
 
+/* Miscellaneous */
+.bold {
+    font-weight: bold;
+}
+
 .container {
     display: flex;
     justify-content: center;
