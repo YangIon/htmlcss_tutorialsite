@@ -145,19 +145,53 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
+
+.element-card > .element-hover {
+    position: absolute;
+    max-width: 350px;
+    text-align: left;
+    padding: 60px;
+    align-self: center;
+    color: white;
+    visibility: hidden;
+    transition: visibility .25s ease-in-out;
+}
+
+.element-card > img {
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+}
+
+.element-card:hover > img {
+    opacity: 0.2;
+}
+
+.element-card:hover > .element-hover {
+    visibility: visible;
+}
+
+/* .element-hover {
+    background: #eee;
+    opacity: 1.0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+}
+
+.element-card:hover > .element-hover {
+    opacity: 0.4;
+} */
 
 @media only screen and (max-width: 1024px) {
     .element-card > img {
-        width: 400px;
-        height: 315px;
+        background-size: 400px 315px;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .element-card > img {
-        width: 80vw;
-        height: 70vw;
+        background-size: 80vw 70vw;
     }
 }
 
@@ -171,8 +205,6 @@ html, body {
 
 @media only screen and (max-width: 1024px) {
     .element-card > span {
-        min-width: 100%;
-        padding: 5px;
         font-size: 0.9rem;
     }
 }
