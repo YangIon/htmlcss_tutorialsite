@@ -31,7 +31,7 @@
 
 <h2>HTML? Who's that?</h2>
 
-<p>HTML is a convenient acronym (there are A LOT of acronyms in software) for <strong>Hyper Text Markup Language</strong>. I will be referring to this as HTML from hereon out because I'm sane.</p>
+<p>HTML is a convenient acronym (there are A LOT of acronyms in software) for <strong>Hyper Text Markup Language</strong>. I will be referring to this as HTML from hereon out because I'm sane. </p>
 
 <p>Basically, you use HTML to write up what goes on your webpage from text and images to actual areas containing these elements. You can think of the web coder at this point as an artist deciding where his painting should go and what content should go on the canvas.</p>
 
@@ -42,6 +42,8 @@
 <li>Every element is represented by special <strong>tags</strong> which we will get to learn about mroe in-depth later</li>
 <li>Tags label the content that you put onto the webpage</li>
 </ul>
+
+<p>HTML's current version, HTML5, emphasizes a "standard" way of declaring elements in our document such that writing and reading the code is much easier to achieve the same results of what we want to write.</p>
 
 <hr/>
 
@@ -64,6 +66,8 @@
 <h2>Distinguishing HTML and CSS</h2>
 
 <p>If HTML forms the structure of our document, then CSS should provide the presentation of it. HTML does not so much focus on the style as what information we are trying to convey to a user and CSS is the opposite. This is mainly a design philosophy that we should be aware of as we develop our project.</p>
+
+<p>In particular, HTML5 was created with this distinction in mind and many of the methods we'll be learning here for writing HTML are a result of this.</p>
 
 <hr />
 
@@ -225,11 +229,11 @@
 <p>As our project grows, it might become difficult to keep track of what each element is doing. In many programming languages, we have the ability to write <strong>comments</strong> or lines which do not get interpreted as code by the compiler and are solely for user documentation.</p>
 
 <pre>
-<code class="prettyprint">
-&lt;body&gt;
-&lt;!-- This is an example of a comment! --&gt;
-&lt;/body&gt;
-</code>
+    <code class="prettyprint">
+    &lt;body&gt;
+    &lt;!-- This is an example of a comment! --&gt;
+    &lt;/body&gt;
+    </code>
 </pre>
 
 <p>If you preview your page again, you will not see the comment appear on the page. Comments can be very useful notes to you or even other people who may review your code. I recommend keeping comments on your code as we continue to make progress.</p>
@@ -251,6 +255,7 @@
 
 <ul>
 <li><code class="prettyprint">&lt;div&gt;</code>: A more general and commonly used tag, this defines a general division or section of our HTML document</li>
+<li><code class="prettyprint">&lt;nav&gt;</code>: This tag defines a set of navigational links which we can provide as separate tags. Before the navigation tag, it used to be much more convoluted to create a navigational menu</li>
 <li><code class="prettyprint">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, ... , &lt;h6&gt;</code>: Headings are titles that get displayed on our page. With each level of heading (up to 6) the font becomes smaller</li>
 <li><code class="prettyprint">&lt;ul&gt;, &lt;li&gt; </code>: Unordered list and list item. If you wrap something as an unordered list you will essentially make a bulleted list. We use a list item to denote individual items in the list</li>
 <li><code class="prettyprint">&lt;p&gt;</code>, <code class="prettyprint">&lt;br /&gt;</code>: A paragraph element and break tag. In HTML, you won't be able to change how your text looks the usual way--you can't just add extra spaces or lines in your code--and paragraph tag will help you write the text for browsers. Break tags will create a line break in your document.</li>
@@ -278,9 +283,9 @@
 <p>Let's add two of these elements into our document now. Inside our <code class="prettyprint">&lt;body&gt;</code> element area, we'll add a <code class="prettyprint">&lt;p&gt;</code> enclosing our text and a <code class="prettyprint">&lt;div&gt;</code> enclosing both of these elements.</p>
 
 <pre>
-<code class="prettyprint">
+    <code class="prettyprint">
 
-</code>
+    </code>
 </pre>
 
 <figure>
@@ -363,6 +368,7 @@
 <ul>
 <li><strong>Welcome Section</strong></li>
 <li><strong>About Section</strong></li>
+<li><strong>Navigation Bar</strong></li>
 <li><strong>Work Section</strong></li>
 <li><strong>Contact Section</strong></li>
 </ul>
@@ -381,9 +387,9 @@
 <code class="prettyprint">
 &lt;body&gt;
     &lt;div&gt;
-        &lt;h1&gt;<em>Name goes here</em>&lt;/h1&gt;
+        &lt;h1&gt;<em> Name goes here </em>&lt;/h1&gt;
         &lt;img src=<em>"Link to round kitty"</em> alt="Round Kitty"&gt;
-        &lt;p&gt;<em>Catchy phrase goes here</em>&lt;p&gt;
+        &lt;p&gt;<em> Catchy phrase goes here </em>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/body&gt;
 </code>
@@ -415,10 +421,10 @@
     &lt;div&gt;
         &lt;h1&gt;<em> Name goes here </em>&lt;/h1&gt;
         &lt;img src=<em>"Link to round kitty"</em> alt="Round Kitty"&gt;
-        &lt;p&gt;<em> Catchy phrase goes here </em>&lt;p&gt;
+        &lt;p&gt;<em> Catchy phrase goes here </em>&lt;/p&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;p&gt;<em> Write your blurb here </em>&lt;p&gt;
+        &lt;p&gt;<em> Write your blurb here </em>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/body&gt;
 </code>
@@ -438,9 +444,46 @@
 
 <hr />
 
+<h2>Navigation Bar</h2>
+
+<p>With HTML5, HTML designates a specific <code class="prettyprint">&lt;nav&gt;</code> tag for a navigation bar. We can wrap this tag over as many <code class="prettyprint">&lt;a&gt;</code> tags as we need for each link in the navigation bar. In this case, we will just be using 3 links to direct the user to 1) the about, 2) the work, 3) the contact.</p>
+
+<pre>
+<code class="prettyprint">
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;h1&gt;<em> Name goes here </em>&lt;/h1&gt; 
+        &lt;img src=<em>"Link to round kitty"</em> alt="Round Kitty"&gt;
+        &lt;p&gt;<em> Write your blurb here </em>&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;nav&gt;
+        &lt;a href=<em>"Link here"</em>&gt;About&lt;/a&gt;
+        &lt;a href=<em>"Link here"</em>&gt;My Work&lt;/a&gt;
+        &lt;a href=<em>"Link here"</em>&gt;Contact Me&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+</code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_nav_1.jpg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>Navigation links added to our HTML document</figcaption>
+
+</figure>
+
+<p>You'll notice that we have a new attribute in our <code class="prettyprint">&lt;a&gt;</code> tag. This <code>href</code> attribute indicates where our link will point to. If you want to see how linking to external sites works, try setting one of the <code>href</code> attributes to <strong>https://google.com/</strong> and it should take you to Google's homepage when you click on the link. Later, we will learn about how to link to specific regions on our website.</p>
+
+<hr />
+
 <h2>Work Section</h2>
 
-<p>From hereon, things are going to get a little more involved. Our work section will have six images laid out in a grid-like fashion and if you played around with the sample website you would </p>
+<p>From hereon, things are going to get a little more involved. Our work section will have a header, six images laid out in a grid-like fashion, and a brief description that fades in over the image when you hover over it.</p>
 
 <p>Remember nesting? While we're going to wrap our work section inside another <code class="prettyprint">&lt;div&gt;</code> </p>
 
