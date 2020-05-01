@@ -65,9 +65,9 @@
 
 <h2>Distinguishing HTML and CSS</h2>
 
-<p>If HTML forms the structure of our document, then CSS should provide the presentation of it. HTML does not so much focus on the style as what information we are trying to convey to a user and CSS is the opposite. This is mainly a design philosophy that we should be aware of as we develop our project.</p>
+<p>If HTML forms the structure of our document, then CSS should provide the presentation of it. HTML does not so much focus on the style as what information we are trying to convey to a user and CSS is the opposite. This is mainly a design philosophy called <strong>semantic HTML</strong> that we should be aware of as we develop our project.</p>
 
-<p>In particular, HTML5 was created with this distinction in mind and many of the methods we'll be learning here for writing HTML are a result of this.</p>
+<p>In particular, HTML5 was created with this distinction in mind with its variety of semantic features for writing HTML and many of the methods we'll be learning about for HTML are a result of this. </p>
 
 <hr />
 
@@ -117,8 +117,8 @@
 
 <div class="image-container">
 
-<p><img src="img/glitch_home.png" alt="alttext" />
-<img src="img/2020-04-16-1587076424_screenshot_943x938.jpg" alt="alt text" /></p>
+<p><img src="img/glitch_home.svg" alt="alttext" />
+<img src="img/2020-04-16-1587076424_screenshot_943x938.svg" alt="alt text" /></p>
 
 </div>
 
@@ -136,8 +136,7 @@
 
 <div class="image-container">
 
-<p><img src="img/glitch_indexpage.jpg" alt="alttext" />
-<img src="img/glitch_indexpage.jpg" alt="alttext" /></p>
+<p><img src="img/glitch_indexpage.svg" alt="alttext" /></p>
 
 </div>
 
@@ -151,7 +150,7 @@
 
 <div class="image-container">
 
-<p><img src="img/glitch_indexpage_edited.png" alt="alttext" /></p>
+<p><img src="img/glitch_indexpage_edited.svg" alt="alttext" /></p>
 
 </div>
 
@@ -176,7 +175,7 @@
 
 <div class="image-container">
 
-<p><img src="img/glitch_indexpage_basic.jpg" alt="alttext" /></p>
+<p><img src="img/glitch_indexpage_basic.svg" alt="alttext" /></p>
 
 </div>
 
@@ -218,7 +217,7 @@
 
 <div class="image-container">
 
-<p><img src="img/glitch_changetitle_result.jpg" alt="alttext" /></p>
+<p><img src="img/glitch_changetitle_result.svg" alt="alttext" /></p>
 
 </div>
 
@@ -255,6 +254,7 @@
 
 <ul>
 <li><code class="prettyprint">&lt;div&gt;</code>: A more general and commonly used tag, this defines a general division or section of our HTML document</li>
+<li><code class="prettyprint">&lt;section&gt;</code>: Can be used to divide our document into sections and subsections and has replaced the <code class="prettyprint">&lt;div&gt;</code> to divide up semantic information for use cases like pairing headings with paragraph sections</li>
 <li><code class="prettyprint">&lt;nav&gt;</code>: This tag defines a set of navigational links which we can provide as separate tags. Before the navigation tag, it used to be much more convoluted to create a navigational menu</li>
 <li><code class="prettyprint">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, ... , &lt;h6&gt;</code>: Headings are titles that get displayed on our page. With each level of heading (up to 6) the font becomes smaller</li>
 <li><code class="prettyprint">&lt;ul&gt;, &lt;li&gt; </code>: Unordered list and list item. If you wrap something as an unordered list you will essentially make a bulleted list. We use a list item to denote individual items in the list</li>
@@ -264,13 +264,13 @@
 <li><code class="prettyprint">&lt;form&gt;</code>: This tag will create a form with multiple fields that a user on your website can put information in. This will make up the contact form portion of our portfolio</li>
 </ul>
 
-<p>Here is a quick markup displaying these examples:</p>
+<p>I know this list might seem overwhelming or difficult to remember, so here is a visual example of these tags at work in our browser so you can get a good picture of how they will appear.</p>
 
 <figure>
 
 <div class="image-container">
 
-<p><img src="img/quick_markup.jpg" alt="alttext" /></p>
+<p><img src="img/quick_markup.svg" alt="alttext" /></p>
 
 </div>
 
@@ -292,7 +292,7 @@
 
 <div class="image-container">
 
-<p><img src="img/glitch_tagsexplained_1.jpg" alt="alttext" /></p>
+<p><img src="img/glitch_tagsexplained_1.svg" alt="alttext" /></p>
 
 </div>
 
@@ -310,7 +310,7 @@
 
 <p>However, if we were to nest another element inside the <code class="prettyprint">&lt;p&gt;</code> tag then it becomes a <em>descendant</em> of the original <code class="prettyprint">&lt;div&gt;</code>. Our <code class="prettyprint">&lt;div&gt;</code> would be a grandparent!</p>
 
-<p>This understanding of relaitonships between elements is especially important as we start getting into <strong>attributes</strong>. Attributes are characteristics we assign to HTML elements inside the opening tag like what images will be displayed by the <code class="prettyprint">&lt;img&gt;</code> tag, what link or section our <code class="prettyprint">&lt;a&gt;</code> tag points towards, or even how we group elements together.</p>
+<p>This understanding of relationships between elements is especially important as we start getting into <strong>attributes</strong>. Attributes are characteristics we assign to HTML elements inside the opening tag like what images will be displayed by the <code class="prettyprint">&lt;img&gt;</code> tag, what link or section our <code class="prettyprint">&lt;a&gt;</code> tag points towards, or even how we group elements together.</p>
 
 <p>We can embed an image in our document now by adding an <code class="prettyprint">&lt;img&gt;</code> tag like so: <code class="prettyprint">&lt;img src=<em>"link"</em> alt=<em>"alt text"</em>&gt;</code>.</p>
 
@@ -324,9 +324,9 @@
 
 <div class="image-container">
 
-<p><img src="img/glitch_attributesexplained_1.jpg" alt="alttext" />
-<img src="img/glitch_attributesexplained_2.jpg" alt="alttext" />
-<img src="img/glitch_attributesexplained_imgresult.jpg" alt="alttext" /></p>
+<p><img src="img/glitch_attributesexplained_1.svg" alt="alttext" />
+<img src="img/glitch_attributesexplained_2.svg" alt="alttext" />
+<img src="img/glitch_attributesexplained_imgresult.svg" alt="alttext" /></p>
 
 </div>
 
@@ -334,7 +334,7 @@
 
 </figure>
 
-<p>Due to the nature of Glitch, we actually store a copy of our image file on their databases and we use the copied URL to reference the image in the database. However, in an independent project, we could have also referenced the file in our project itself such as <code class="prettyprint">&lt;img src="image.jpg" alt="An Image"&gt;</code> with our file structure looking like this:</p>
+<p>Due to the nature of Glitch, we actually store a copy of our image file on their databases and we use the copied URL to reference the image in the database. However, in an independent project, we could have also referenced the file in our project itself such as <code class="prettyprint">&lt;img src="img/image.jpg" alt="An Image"&gt;</code> with our file structure looking like this:</p>
 
 <pre>
     <code>
@@ -343,13 +343,66 @@
     |   index.html
     |   script.js
     |   style.css
-    |   image.jpg
+    |   img/
+    ----|   image.jpg
     </code>
 </pre>
+
+<p>If you are interested in seeing how you can set this up in Glitch, read the <a href="">Referencing Image Files Locally in Glitch</a> section; otherwise, feel free to move on to the next section!</p>
 
 <p>I won't go into much further detail about directories and file structure since that isn't our focus right now. However, I'm hoping you can see HTML attributes at play when we use them in our <code class="prettyprint">&lt;img&gt;</code> tag. In this case, we are using attributes to specify what image is displayed when we use <code class="prettyprint">&lt;img&gt;</code> in our HTML.</p>
 
 <p>Notice too that our <code class="prettyprint">&lt;img&gt;</code> element is now parents by the <code class="prettyprint">&lt;div&gt;</code> element and is a child of it as well alongside our <code class="prettyprint">&lt;p&gt;</code> element. We can also think of the <code class="prettyprint">&lt;div&gt;</code> as <em>containing</em> these other elements so that it forms a kind of functional grouping of them. When it comes to styling our page with CSS, we'll use these groupings to style multiple sections at once.</p>
+
+<h3>Referencing Image Files Locally in Glitch</h3>
+
+<p>There is a command terminal in Glitch from which we can run useful program commands from. One we will use specifically to create a local folder in our project is <code>mkdir</code> which will allow us to create a directory/folder in in our project.</p>
+
+<p>You can access the terminal by selecting <strong><em>Tools</em></strong> in the bottom left of your screen. Once you have the panel open, select <strong><em>Terminal</em></strong> and a new panel should open up presenting you with the terminal interface.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_terminal.svg" alt="alt text" />
+<img src="img/glitch_terminal_open.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>The Glitch command terminal</figcaption>
+
+</figure>
+
+<p>I will use a sample Android image for example. After uploading, the Android image to <code>assets/</code>, I copy the URL like I did in the previous section.</p>
+
+<p>Now run the following code to create a local <code>img/</code> folder so that we can upload image files to this new folder:</p>
+
+<pre>
+    <code class="prettyprint">
+    $ mkdir img
+    $ cd img
+    $ wget -O <em>new_file_name android_URL</em>
+    $ refresh
+    </code>
+</pre>
+
+<p>Make sure to leave a space between what you write as <code>new_file_name</code> and <code>android_URL</code>.</p>
+
+<p>After running these commands, you can close the terminal. The commands we executed will refresh your files and update your editor with any console-created files. You should now see an <code>img/</code> folder in your project with a new image file that has the name you specified.</p>
+
+<p><strong>Fun fact</strong>: <code>mkdir</code> and <code>cd</code> are commands that can be used in your local Windows or MacOS command shells as well. I'll leave it up to your curiosity to try them out. Don't worry, they won't break your computer.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_terminal_newfile.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>Your project directory with the new img folder</figcaption>
+
+</figure>
 
 <hr/>
 
@@ -361,7 +414,7 @@
 
 <p>We're going to <em>modularize</em> our project. That is, we'll separate each section into independent components that will come together for the final product.</p>
 
-<p>I like to encapsulate each project component in separate <code class="prettyprint">&lt;div&gt;</code> tags that way if I ever have to change anything about a specific section I can change the corresponding <code class="prettyprint">&lt;div&gt;</code>.</p>
+<p>I like to encapsulate each project component in separate <code class="prettyprint">&lt;section&gt;</code> tags that way if I ever have to change anything about a specific section I can change the corresponding <code class="prettyprint">&lt;section&gt;</code>. This is also a good practice for when the scale of our project grows larger. We want to be able to understand how to quickly and cleanly contribute to our project.</p>
 
 <p>To refresh your memory, here are the components we are building:</p>
 
@@ -377,7 +430,7 @@
 
 <h3>Welcome Section</h3>
 
-<p>The welcome section will be a <code class="prettyprint">&lt;div&gt;</code> containing a profile image, a main title, and a subtitle. In HTML, this means that we will include a header tag for our name, an <code class="prettyprint">&lt;img&gt;</code> tag for our profile image, and a <code class="prettyprint">&lt;p&gt;</code> tag for our subtitle.</p>
+<p>The welcome section will be a <code class="prettyprint">&lt;section&gt;</code> containing a profile image, a main title, and a subtitle. In HTML, this means that we will include a header tag for our name, an <code class="prettyprint">&lt;img&gt;</code> tag for our profile image, and a <code class="prettyprint">&lt;p&gt;</code> tag for our subtitle.</p>
 
 <p>Luckily, we won't have to do much work on this part since all we really have to do is rearrange our <code class="prettyprint">&lt;img&gt;</code> and <code class="prettyprint">&lt;p&gt;</code> tags then add a header!</p>
 
@@ -386,11 +439,11 @@
 <pre>
 <code class="prettyprint">
 &lt;body&gt;
-    &lt;div&gt;
+    &lt;section&gt;
         &lt;h1&gt;<em> Name goes here </em>&lt;/h1&gt;
         &lt;img src=<em>"Link to round kitty"</em> alt="Round Kitty"&gt;
         &lt;p&gt;<em> Catchy phrase goes here </em>&lt;/p&gt;
-    &lt;/div&gt;
+    &lt;/section&gt;
 &lt;/body&gt;
 </code>
 </pre>
@@ -399,7 +452,7 @@
 
 <div class="image-container">
 
-<p><img src="img/section_welcome_1.jpg" alt="alttext" /></p>
+<p><img src="img/section_welcome_1.svg" alt="alttext" /></p>
 
 </div>
 
@@ -413,19 +466,19 @@
 
 <h3>About Section</h3>
 
-<p>We want to provide our audience with a brief description of ourselves. Something short and sweet that highlights a few things about us. Again, we will use a <code class="prettyprint">&lt;div&gt;</code> to wrap our section. In this case, since all we are doing is writing a short blurb we just need a <code class="prettyprint">&lt;p&gt;</code> tag:</p>
+<p>We provide our readers with a brief description of ourselves. Something short and sweet that highlights a few things about us. Again, we will use a <code class="prettyprint">&lt;section&gt;</code> to wrap our section. In this case, since all we are doing is writing a short blurb we just need a <code class="prettyprint">&lt;p&gt;</code> tag:</p>
 
 <pre>
 <code class="prettyprint">
 &lt;body&gt;
-    &lt;div&gt;
+    &lt;section&gt;
         &lt;h1&gt;<em> Name goes here </em>&lt;/h1&gt;
         &lt;img src=<em>"Link to round kitty"</em> alt="Round Kitty"&gt;
         &lt;p&gt;<em> Catchy phrase goes here </em>&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
         &lt;p&gt;<em> Write your blurb here </em>&lt;/p&gt;
-    &lt;/div&gt;
+    &lt;/section&gt;
 &lt;/body&gt;
 </code>
 </pre>
@@ -434,7 +487,7 @@
 
 <div class="image-container">
 
-<p><img src="img/section_about_1.jpg" alt="alttext" /></p>
+<p><img src="img/section_about_1.svg" alt="alttext" /></p>
 
 </div>
 
@@ -451,11 +504,11 @@
 <pre>
 <code class="prettyprint">
 &lt;body&gt;
-    &lt;div&gt;
+    &lt;section&gt;
         &lt;h1&gt;<em> Name goes here </em>&lt;/h1&gt; 
         &lt;img src=<em>"Link to round kitty"</em> alt="Round Kitty"&gt;
         &lt;p&gt;<em> Write your blurb here </em>&lt;/p&gt;
-    &lt;/div&gt;
+    &lt;/section&gt;
     &lt;nav&gt;
         &lt;a href=<em>"Link here"</em>&gt;About&lt;/a&gt;
         &lt;a href=<em>"Link here"</em>&gt;My Work&lt;/a&gt;
@@ -469,7 +522,7 @@
 
 <div class="image-container">
 
-<p><img src="img/section_nav_1.jpg" alt="alttext" /></p>
+<p><img src="img/section_nav_1.svg" alt="alttext" /></p>
 
 </div>
 
@@ -485,7 +538,59 @@
 
 <p>From hereon, things are going to get a little more involved. Our work section will have a header, six images laid out in a grid-like fashion, and a brief description that fades in over the image when you hover over it.</p>
 
-<p>Remember nesting? While we're going to wrap our work section inside another <code class="prettyprint">&lt;div&gt;</code> </p>
+<p>Remember nesting? While we're going to wrap our work section inside another <code class="prettyprint">&lt;section&gt;</code> tag, we are also going to nest a <code class="prettyprint">&lt;div&gt;</code> inside of it which will contain all of our image-caption elements--this will represent our image gallery. In addition, we will nest our image and captions inside their own <code class="prettyprint">&lt;div&gt;</code> tags.</p>
+
+<p>The idea here is that we are considering the image gallery as one element and each image as their own individual element. As a result, we will be able to make separate changes to our gallery as a whole or to our individual changes as the need arises.</p>
+
+<p>Here are some sample images for you to work with:</p>
+
+<p><a href="img/gallery_images/gallery_images.zip">Gallery Images</a></p>
+
+<p>Now our section with the image gallery and individual image elements will look like this in our code:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;!-- Inside of the body; remainder of code above --&gt;
+&lt;section&gt;
+    &lt;div&gt;
+        &lt;!-- Below is our image element. 
+            You can copy this for each image you use --&gt;
+        &lt;div&gt;
+            &lt;img src=<em>"Image link here"</em> alt=<em>"Alt text here"</em>&gt;
+            &lt;p&gt;<em> Image caption </em>&lt;/p&gt;
+        &lt;/div&gt;
+        ...
+    &lt;/div&gt;
+&lt;/section&gt;
+...
+</code>
+</pre>
+
+<p>If you are using the image links, don't forget to import these images into the <code>assets/</code> folder and use the image URLs in the <code>src</code> attribute of your <code class="prettyprint">&lt;img&gt;</code> tags. </p>
+
+<p>If you are using local images from your <code>img/</code> folder, be sure to run the console commands in the <a href="">Referencing Image Files Locally in Glitch</a> section! You can then reference your image in the <code>src</code> attribute with <code>img/file_name</code>.</p>
+
+<p>At this point, you should see six large images in a single column with captions underneath each of them.</p>
+
+<p>This is the most complicated part of our HTML markup so if you aren't seeing the column of images, try retracing each step carefully.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_work_1.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>The six images appear in a column with their captions underneath</figcaption>
+
+</figure>
+
+<h2>Contact Section</h2>
+
+<p>We're now at the final step of laying down all our HTML--the <code class="prettyprint">&lt;form&gt;</code> element. </p>
+
+<p>HTML forms allow you to collect user input </p>
 
 
 

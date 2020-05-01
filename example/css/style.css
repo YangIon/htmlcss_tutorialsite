@@ -4,20 +4,28 @@
 }
 html, body {
     margin: 0;
+    padding: 0;
     min-height: 100%;
     line-height: 1.4;
 }
 
 .navbar {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px 0;
-    z-index: 10;
-    background-color: #349eeb;
-    min-width: 100%;    
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .navbar {
+        display: flex;
+        min-width: 100%;
+        justify-content: flex-end;
+        position: fixed;
+        padding: 20px 0;
+        top: 0;
+        left: 0;
+        padding: 20px 0;
+        z-index: 10;
+        background-color: #349eeb;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -118,25 +126,28 @@ html, body {
 }
 
 .group-element-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     /* flex-flow: row wrap; */
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 700px) {
     .group-element-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (min-width: 1000px) {
     .group-element-container {
-        grid-template-columns: 1fr;
-    }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }    
 }
 
 .element-card {
@@ -145,28 +156,46 @@ html, body {
     margin: 0 auto;
     text-align: center;
     display: flex; 
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.element-card > .element-hover {
+.element-hover {
     position: absolute;
-    max-width: 350px;
+    max-width: 80%;
+    padding: 0;
+    font-size: 15px;
     text-align: left;
     /* padding: 60px; */
     /* align-self: center; */
     color: white;
     visibility: hidden;
     transition: visibility .25s ease-in-out;
+
 }
 
 .element-card > img {
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
-    height: 320px;
-    width: 400px; 
+    height: 220px;
+    width: 300px; 
     object-fit: cover;
+}
+
+@media only screen and (min-width: 800px) {
+    .element-card > img {
+        width: 360px;
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .element-card > img {
+        width: 380px;
+        height: 300px;
+    }
 }
 
 .element-card:hover > img {
@@ -177,17 +206,6 @@ html, body {
     visibility: visible;
 }
 
-@media only screen and (max-width: 1024px) {
-    .element-card > img {
-        background-size: 400px 315px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .element-card > img {
-        background-size: 80vw 70vw;
-    }
-}
 
 .element-card > p {
     min-width: 100%;
@@ -208,7 +226,6 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
     background: var(--main-gray);
     color: #eee;
     padding: 300px 0;
@@ -223,14 +240,6 @@ html, body {
 }
 
 .contact-section > form {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 1rem;
-    margin: 0 auto;
-}
-
-@media only screen and (max-width: 600px) {
-    .contact-section > form {
-        grid-template-columns: 1fr;
-    }
+    display: flex;
+    flex-direction: column;
 }
