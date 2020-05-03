@@ -588,9 +588,40 @@
 
 <h2>Contact Section</h2>
 
-<p>We're now at the final step of laying down all our HTML--the <code class="prettyprint">&lt;form&gt;</code> element. </p>
+<p>Before we design our form, we will add one more <code class="prettyprint">&lt;section&gt;</code> tag to create our contact section. We'll also add a sub-header inside it to get our contact phrase in.</p>
 
-<p>HTML forms allow you to collect user input </p>
+<pre>
+<code class="prettyprint">
+&lt;section&gt;
+    &lt;h2&gt;Let's get in touch!&lt;/h2&gt;
+&lt;/section&gt;
+</code>
+</pre>
+
+<p>We're now at the final step of laying down all our HTML with HTML forms.</p>
+
+<p>HTML forms allow you to collect user input so that you can process the information in the form of blog comments, mailing lists, e-commerce products, and much, much more. Forms have two components attributed to them: a <em>frontend</em> side and the <em>backend</em> server. </p>
+
+<p>The frontend refers to the look and appearance of the form created through HTML and CSS while the backend refers to the code that processes the information given to the form by the user. We won't be focusing on the backend portion and instead we will be looking to design the frontend interface--what the user will see.</p>
+
+<p>In HTML, every form is designated by the <code class="prettyprint">&lt;form&gt;</code> tag with two important attributes: <code>action</code> and <code>method</code>. We can add a form into our document now with this code:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;form action='' method='get'&gt;
+&lt;/form&gt;
+</code>
+</pre>
+
+<p>The <code>action</code> attribute points to a URL that processes all the information we write in our form. Developers will set up special URLs in a web server to be able to deal with this information in a way that fits with the application they are building. However, we leave this blank in order to redirect back to the page we are on when we <strong><em>Submit</em></strong> our information since we are not dealing with any backend technologies.</p>
+
+<p>The <code>method</code> attributes deals in two common types of requests in web technology: <strong><code>post</code></strong> and <strong><code>get</code></strong>. This relates to how the form gets processed in the web server. The way you can think about these requests is that we use <code>post</code> when we are changing data on the server and <code>get</code> when we are getting data.</p>
+
+<p>In our case, we want to use the <code>get</code> request so we can see the information we send to the form.</p>
+
+<h3>Input Elements</h3>
+
+<p>Unlike other HTML elements, forms include special elements called <strong>inputs</strong> <code class="prettyprint">&lt;&gt;</code> </p>
 
 
 

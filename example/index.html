@@ -17,7 +17,7 @@
             <a href="#contact-section">Contact Me</a>
         </nav>
         <div class="welcome-section">
-            <img src="img/yang.jpeg" alt="yang profile">
+            <img src="img/yang.svg" alt="yang profile">
             <h1 style="color: white; font-size: 35px;text-align: center;">Yang Chen</h1>
         </div>
         <div id="about-section" class="about-section">
@@ -32,35 +32,35 @@
                 <div class="element-card">
                     <div class="element-hover">Some random nature photo I found when I couldn't think of what photos to
                         add here</div>
-                    <img src="img/nature.jpg" alt="nature image">
+                    <img src="img/nature.svg" alt="nature image">
                     <p>My Random Work 1</p>
                 </div>
                 <div class="element-card">
                     <div class="element-hover">This is me after my friends told me that they had all rolled down this
                         really steep hill--except they didn't</div>
-                    <img src="img/yang_falling.jpg" alt="yang falling">
+                    <img src="img/yang_falling.svg" alt="yang falling">
                     <p>My Random Work 2</p>
                 </div>
                 <div class="element-card">
                     <div class="element-hover">Chicken dumplings made with love at the CS department</div>
-                    <img src="img/dumplings.jpg" alt="dumplings" >
+                    <img src="img/dumplings.svg" alt="dumplings" >
                     <p>My Random Work 3</p>
                 </div>
                 <div class="element-card">
                     <div class="element-hover">Goofing around at Carolina Data Challenge. We rolled around the diner
                         cart for an hour. The person in the top-right is the president by the way.</div>
-                    <img src="img/frandz.jpg" alt="friends" >
+                    <img src="img/frandz.svg" alt="friends" >
                     <p>My Random Work 4</p>
                 </div>
                 <div class="element-card">
                     <div class="element-hover">Friends imitating a football game</div>
-                    <img src="img/frandz_football.jpg" alt="friends football" >
+                    <img src="img/frandz_football.svg" alt="friends football" >
                     <p>My Random Work 5</p>
                 </div>
                 <div class="element-card">
                     <div class="element-hover">Homemade hotpot with some unc friends. we had a good time, especially
                         when the pot almost tipped over</div>
-                    <img src="img/brewer_hotpot.jpg" alt="hotpot party" >
+                    <img src="img/brewer_hotpot.svg" alt="hotpot party" >
                     <p>My Random Work 6</p>
                 </div>
             </div>
@@ -70,15 +70,32 @@
                 Let's get in touch!
             </h2>
             <form>
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname" placeholder="This is a text input">
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname" placeholder="This is a text input">
-                <label for="email">Email: </label>
-                <input type="email" id="email" placeholder="example@live.unc.edu">
-                <label for="message">Leave a Message!</label>
-                <textarea name="message" row="20" cols="30"></textarea>
-                <input type="submit" value="Submit">
+                <div class="form-row">
+                    <label for="full-name">Name:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="This is a text input">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="example@live.unc.edu">
+                </div>
+                <fieldset class='legacy-form-row'>
+                    <legend>Class Year:</legend>
+                    <input type='radio' id="year1" value='2020' name='class-year'>
+                    <label for="year1" class='radio-label'>2020</label>
+                    <input type='radio' id="year2" value='2021' name='class-year'>
+                    <label for="year2" class='radio-label'>2021</label>
+                    <input type='radio' id="year3" value='2022' name='class-year'>
+                    <label for="year3" class='radio-label'>2023</label>
+                    <input type='radio' id="year4" value='2023' name='class-year'>
+                    <label for="year4" class='radio-label'>2024</label>
+                </fieldset>
+                <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <div class="form-row">
+                    <button>Submit</button>
+                </div>
             </form>
         </div>
     </div>
