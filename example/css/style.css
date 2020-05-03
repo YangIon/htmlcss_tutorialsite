@@ -14,9 +14,6 @@ html, body {
     display: none;
 }
 
-.navbar:hover {
-}
-
 @media only screen and (min-width: 900px) {
     .navbar {
         display: flex;
@@ -247,7 +244,7 @@ html, body {
     margin: 0 0 40px 0;
 }
 
-.form-row {
+.form-input {
     margin-bottom: 40px;
     display: flex;
     justify-content: flex-start;
@@ -255,9 +252,9 @@ html, body {
     flex-wrap: wrap;
 }
 
-.form-row input[type='text'], 
-.form-row input[type='email'],
-.form-row textarea {
+.form-input input[type='text'], 
+.form-input input[type='email'],
+.form-input textarea {
     background-color: #FFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
@@ -266,36 +263,36 @@ html, body {
     font-size: 14px;
 }
 
-.form-row label {
+.form-input label {
     margin-bottom: 15px;
 }
 
-.legacy-form-row {
+.group-form-input {
     border: none;
     margin-bottom: 40px;
     padding: 0;
 }
 
-.legacy-form-row legend {
+.group-form-input legend {
     margin-bottom: 15px;
 }
 
-.legacy-form-row .radio-label {
+.group-form-input .radio-label {
     display: block;
     font-size: 14px;
     padding: 0 10px 0 10px;
 }
 
-.legacy-form-row input[type='radio'] {
+.group-form-input input[type='radio'] {
     width: 50%;
 }
 
-.legacy-form-row .radio-label,
-.legacy-form-row input[type='radio'] {
+.group-form-input .radio-label,
+.group-form-input input[type='radio'] {
     float: left;
 }
 
-.form-row textarea {
+.form-input textarea {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 14px;
 
@@ -308,7 +305,7 @@ html, body {
     resize: none;
 }
 
-.form-row button {
+.form-input button {
     font-size: 16px;
     font-weight: bold;
 
@@ -322,11 +319,11 @@ html, body {
     cursor: pointer;
 }
 
-.form-row button:hover {
+.form-input button:hover {
     background-color: #76AEED;
 }
 
-.form-row button:active {
+.form-input button:active {
     background-color: #407FC7;
 }
 
@@ -335,37 +332,37 @@ html, body {
     .contact-section > form {
         width: auto;
     }
-    .form-row {
+    .form-input {
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
-    .form-row input[type='text'],
-    .form-row input[type='email'],
-    .form-row textarea {
+    .form-input input[type='text'],
+    .form-input input[type='email'],
+    .form-input textarea {
         width: 250px;
         height: initial;
     }
-    .form-row label {
+    .form-input label {
         text-align: right;
         width: 120px;
         margin-top: 7px;
         padding-right: 20px;
     }
-    .legacy-form-row {
+    .group-form-input {
         margin-bottom: 10px;
     }
-    .legacy-form-row legend {
+    .group-form-input legend {
         width: 120px;
         text-align: right;
         padding-right: 20px;
         float: left;
     }
-    .legacy-form-row input[type='radio'] {
+    .group-form-input input[type='radio'] {
         width: auto;
     }
-    .form-row button {
+    .form-input button {
         margin-left: 140px;
     }
 }

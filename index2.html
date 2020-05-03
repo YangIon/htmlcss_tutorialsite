@@ -21,7 +21,7 @@
 
 <ul>
 <li>Programming doesn't have to be scary. There's actually a lot of intuition to be found in it once you understand some basics.</li>
-<li>Programming can be fun. There's a lot of useful and creative outlets that it can be used for which is why I specifically chose HTML/CSS--Ibelieve it represents the most aesthetic view of writing code.</li>
+<li>Programming can be fun. There's a lot of useful and creative outlets that it can be used for which is why I specifically chose HTML/CSS--I believe it represents the most aesthetic view of writing code.</li>
 <li>I suppose this is a derivative of the last point, but programming is an art. This is something I'm still learning, but the deeper you go with it the more you realize there are elements of design, creativity, and exploration in programming.</li>
 </ul>
 
@@ -45,6 +45,20 @@
 
 <p>HTML's current version, HTML5, emphasizes a "standard" way of declaring elements in our document such that writing and reading the code is much easier to achieve the same results of what we want to write.</p>
 
+<p>Here is an example of a purely HTML page. It might remind you of an old '90s era website.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/bad_90s.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>An example of pure HTML</figcaption>
+
+</figure>
+
 <hr/>
 
 <h2>CSS? Sounds Fancy.</h2>
@@ -60,6 +74,20 @@
 <li><em>Internal</em>: You create a special section in your webpage which decides the overall style of your webpage</li>
 <li><em>External</em>: You create a special file outside of your HTML document that is connected to it and still styles the HTML elements</li>
 </ul>
+
+<p>Here is an example of CSS at work!</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/yangrchen_landing.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>An example of CSS styling the page</figcaption>
+
+</figure>
 
 <hr/>
 
@@ -85,16 +113,22 @@
 
 <h2>Our End Goal</h2>
 
-<p>The final goal for this tutorial is to get you to build a personal online portfolio for yourself. I have a few sample images of what the final product will eventually look like for you to see, but you can also check out <a href="example/">the website</a> itself and play around with it.</p>
+<p>My primary goal here is to get you learning through hands-on experience. Throughout this tutorial, we will be building a personal online portfolio for you to create and use. </p>
 
-<p>Our portfolio represents a single page that showcases all of the glorious work we've gathered! You'll notice there are several important components that we will be building for our website: </p>
+<p>To get the most out of your learning, I strongly recommend following along each step and typing the code out by hand when we get to developing.</p>
+
+<p>I want to give you the raw, fundamental tools of web development and a shiny new product that you can expand on with your learning as you see fit.</p>
+
+<p>I have a few sample images of what the final product will eventually look like for you to see, but you can also check out <a href="example/">the website</a> itself and play around with it.</p>
+
+<p>Our portfolio represents a single page that showcases all of the glorious work we've gathered. You'll notice there are several important components that we will be building for our website: </p>
 
 <ul>
 <li><em>Welcome Section</em> with our title and a showcase of our lovely visage</li>
 <li><em>Navigation Bar</em> with links that move to different sections of the page</li>
 <li><em>About Section</em> with a small blurb of who we are</li>
-<li><em>Gallery</em> of our "work" with several images that have scroll-over descriptions of our work</li>
-<li><em>Contact Section</em> with a dummy form to get into contact with our audience</li>
+<li><em>Work Gallery</em>  with several images that have scroll-over descriptions of our work</li>
+<li><em>Contact Section</em> with a dummy form interface to get into contact with our audience</li>
 </ul>
 
 <p>And this is what we're starting with!</p>
@@ -352,7 +386,7 @@
 
 <p>I won't go into much further detail about directories and file structure since that isn't our focus right now. However, I'm hoping you can see HTML attributes at play when we use them in our <code class="prettyprint">&lt;img&gt;</code> tag. In this case, we are using attributes to specify what image is displayed when we use <code class="prettyprint">&lt;img&gt;</code> in our HTML.</p>
 
-<p>Notice too that our <code class="prettyprint">&lt;img&gt;</code> element is now parents by the <code class="prettyprint">&lt;div&gt;</code> element and is a child of it as well alongside our <code class="prettyprint">&lt;p&gt;</code> element. We can also think of the <code class="prettyprint">&lt;div&gt;</code> as <em>containing</em> these other elements so that it forms a kind of functional grouping of them. When it comes to styling our page with CSS, we'll use these groupings to style multiple sections at once.</p>
+<p>Notice too that our <code class="prettyprint">&lt;img&gt;</code> element is now parented by the <code class="prettyprint">&lt;div&gt;</code> element and is a child of it as well alongside our <code class="prettyprint">&lt;p&gt;</code> element. We can also think of the <code class="prettyprint">&lt;div&gt;</code> as <em>containing</em> these other elements so that it forms a kind of functional grouping of them. When it comes to styling our page with CSS, we'll use these groupings to style multiple sections at once.</p>
 
 <h3>Referencing Image Files Locally in Glitch</h3>
 
@@ -497,7 +531,7 @@
 
 <hr />
 
-<h2>Navigation Bar</h2>
+<h3>Navigation Bar</h3>
 
 <p>With HTML5, HTML designates a specific <code class="prettyprint">&lt;nav&gt;</code> tag for a navigation bar. We can wrap this tag over as many <code class="prettyprint">&lt;a&gt;</code> tags as we need for each link in the navigation bar. In this case, we will just be using 3 links to direct the user to 1) the about, 2) the work, 3) the contact.</p>
 
@@ -534,7 +568,7 @@
 
 <hr />
 
-<h2>Work Section</h2>
+<h3>Work Section</h3>
 
 <p>From hereon, things are going to get a little more involved. Our work section will have a header, six images laid out in a grid-like fashion, and a brief description that fades in over the image when you hover over it.</p>
 
@@ -586,7 +620,9 @@
 
 </figure>
 
-<h2>Contact Section</h2>
+<hr />
+
+<h3>Contact Section</h3>
 
 <p>Before we design our form, we will add one more <code class="prettyprint">&lt;section&gt;</code> tag to create our contact section. We'll also add a sub-header inside it to get our contact phrase in.</p>
 
@@ -608,20 +644,61 @@
 
 <pre>
 <code class="prettyprint">
-&lt;form action='' method='get'&gt;
+&lt;form action='' method="get"&gt;
 &lt;/form&gt;
 </code>
 </pre>
 
 <p>The <code>action</code> attribute points to a URL that processes all the information we write in our form. Developers will set up special URLs in a web server to be able to deal with this information in a way that fits with the application they are building. However, we leave this blank in order to redirect back to the page we are on when we <strong><em>Submit</em></strong> our information since we are not dealing with any backend technologies.</p>
 
-<p>The <code>method</code> attributes deals in two common types of requests in web technology: <strong><code>post</code></strong> and <strong><code>get</code></strong>. This relates to how the form gets processed in the web server. The way you can think about these requests is that we use <code>post</code> when we are changing data on the server and <code>get</code> when we are getting data.</p>
+<p>The <code>method</code> attribute deals in two common types of requests in web technology: <strong><code>post</code></strong> and <strong><code>get</code></strong>. This relates to how the form gets processed in the web server. The way you can think about these requests is that we use <code>post</code> when we are changing data on the server and <code>get</code> when we are getting data.</p>
 
 <p>In our case, we want to use the <code>get</code> request so we can see the information we send to the form.</p>
 
+<hr />
+
 <h3>Input Elements</h3>
 
-<p>Unlike other HTML elements, forms include special elements called <strong>inputs</strong> <code class="prettyprint">&lt;&gt;</code> </p>
+<p>Unlike other HTML elements, forms include special elements called <strong>input elements</strong>. Input elements are what we use for users to put their information in like textboxes, email, radio buttons, or textareas.</p>
+
+<p>We'll start with the most common input element: text inputs.</p>
+
+<h3>Text Inputs</h3>
+
+<p>We'll start off with the name field. Inside our <code class="prettyprint">&lt;form&gt;</code> tag we can insert a text field input using this code:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;form&gt;
+    &lt;input name="full-name" type="text" /&gt;
+&lt;/form&gt;
+</code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_contact_1.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>Your form with the text input added</figcaption>
+
+</figure>
+
+<p>You'll notice there isn't really any indication of what our text input is looking for. To address this, HTML has special <code class="prettyprint">&lt;label&gt;</code> tags which we can associate with our inputs.</p>
+
+<p>We can attach a label now like this:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;form&gt;
+    &lt;label for="full-name-id"&gt;Name:&lt;/label&gt;
+    &lt;input id="full-name-id" name="full-name" type="text" /&gt;
+&lt;/form&gt;
+</code>
+</pre>
 
 
 
