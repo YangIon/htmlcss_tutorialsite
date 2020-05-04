@@ -1,462 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML/CSS Tutorial</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brief Practical Crash Course in HTML/CSS</title>
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
     <div class="container">
         <div class="article-container">
-            <h1>Brief Practical Crash Course in HTML/CSS</h1>
-            <h2>From Bare Bones Page to Online Website</h2>
-            <section class="section0">
-                <p>
-                    I wanted to make this webpage for the
-                    hobbyists/students/I-avoid-computers-and-code-because-they-are-so-confusing advocates (and
-                    specifically
-                    future educators who might be interested in having some nice tools in their repertoire) that don't
-                    know
-                    too much about programming to help them realize, mainly, three things:
-                </p>
-                <ul>
-                    <li>Programming doesn't have to be scary. There's actually a lot of intuition to be found in it once
-                        you
-                        understand some basics.</li>
-                    <li>Programming can be fun. There's a lot of useful and creative outlets that it can be used for
-                        which
-                        is
-                        why I specifically chose HTML/CSS--I believe it represents the most aesthetic view of writing
-                        code.
-                    </li>
-                    <li>I suppose this is a derivative of the last point, but programming is an art. This is something
-                        I'm
-                        still
-                        learning, but the deeper you go with it the more you realize there are elements of design,
-                        creativity,
-                        and exploration in programming.</li>
-                </ul>
-                <p>
-                    Before I go any further, I want you to know what we're even working with here and <i>why</i>. What
-                    is
-                    <b class="term">HTML</b>? What is <b class="term">CSS</b>? And <b>why do we want to learn them</b>?
-                </p>
-                <p>
-                    HTML is a convenient acronym (there are A LOT of acronyms in software) for <b class="term">Hyper
-                        Text Markup
-                        Language</b>. I will be referring to this as HTML from hereon out because I'm a sane person.
-                </p>
-                <p>Basically, you use HTML to write up what goes on your webpage from text and images to actual areas
-                    containing these elements. You can think of the web coder at this point as an artist deciding where
-                    his
-                    painting should go and what content should go on the canvas.</p>
-                <p>
-                    Broadly, here's what HTML consists of and what you will be seeing later when you get to work with
-                    it!
-                </p>
-                <ul>
-                    <li>HTML is a series of elements that tell an Internet browser how to display your content</li>
-                    <li>Every element is represented by special <b class="term">tags</b> which we will get to learn
-                        about more
-                        in-depth
-                        later</li>
-                    <li>Tags label the content that you put onto the webpage</li>
-                </ul>
-                <p>
-                    CSS stands for <b class="term">Cascading Style Sheets</b>. Like the title implies, this is the tool
-                    we use to
-                    style
-                    our webpage: CSS designates the overall layout of the HTML elements and what they look like. The web
-                    coder as an artist is using his paint strokes and arranging the designs on his painting--however,
-                    CSS
-                    goes a lot deeper than this and there are some incredible designs and layouts you can make of it
-                    that
-                    you will get to create!
-                </p>
-                <p>Broadly, here's what CSS consists of:</p>
-                <ul>
-                    <li>A wide variety of attributes and characteristics you can apply to your elements (e.g. color,
-                        spacing, font size, font style)</li>
-                    <li>We will see this more later. By nature of design, you can inherit or share these characteristics
-                        between elements by only having to write the CSS statement once.</li>
-                    <li><em>Inline</em>: You style the look and layout of each element individually</li>
-                    <li><em>Internal</em>: You create a special section in your webpage which decides the overall style
-                        of
-                        your
-                        webpage</li>
-                    <li><em>External</em>: You create a special file outside of your HTML document that is connected to
-                        it
-                        and
-                        still styles the HTML elements.</li>
-                </ul>
-            </section>
-            <section class="motivation">
-                <h3>
-                    Motivation
-                </h3>
-                <p>
-                    So why learn all of this? We want to make a website! Websites are an awesome way to digitally
-                    express
-                    something we find of interest whether that's a forum, a blog, or even a personal gallery. In a
-                    sense,
-                    they are also a means to communicate something between people. Your favorite social media websites
-                    like
-                    <em>Facebook</em> and <em>Twitter</em> as well as email services like <em>Gmail</em> operate on a
-                    lot of
-                    the same material that we
-                    will be looking at here.
-                </p>
-                <p>
-                    It's obvious that many of the services we use in our daily lives operate as websites and to that end
-                    they are incredibly important. But it can be kind of difficult to understand where they come from
-                    let
-                    alone how to make one yourself. That's why this page exists. I want to show you that it can be a lot
-                    more intuitive than you might think. This is also the beginning of you being able to express
-                    yourself in
-                    a remarkably creative manner where the possibilities are endless.
-                    You don't have to be a programmer to understand how to build websites from scratch.
-                </p>
-                <p>
-                    <b><em>As an Educator:</em></b> Building your own website in HTML and CSS provides you a new means
-                    of
-                    creating learning opportunities for everyone you mentor. You will also be able to take
-                    responsibility for harnessing a new mode of expression and the process of learning can also teach
-                    you how you might best fit in different learning environments. As a student, I am very excited to be
-                    able to share this with you because I believe technology, when used right, can create a massive,
-                    positive impact for public education.
-                </p>
-                <p>
-                    HTML and CSS are the bread and butter of creating a website. There is also a cross platform
-                    scripting
-                    language
-                    called JavaScript which defines the <em>behaviour</em> of a website, but we will focus on HTML and
-                    CSS
-                    for
-                    now because there's already so much you can do with these two tools.
-                </p>
-            </section>
-            <section class="section2">
-                <h3>Our End Goal</h3>
-                <p>
-                    The final goal for this tutorial is to get you to build a personal online portfolio for yourself. I
-                    have
-                    a few sample images of what the final product will eventually look like for you to see, but you can
-                    also
-                    check out <a href="example/">the website</a> itself and play around with it.
-                </p>
-                <div class="image-container">
-                    <img>
-                </div>
-                <p>
-                    Our portfolio represents a single page that showcases all of the glorious work we've labored on!
-                    You'll
-                    notice there are several important components that we will be building for our website:
-                </p>
-                <ul>
-                    <li><em>Welcome Section</em> with our title and a showcase of our lovely visage</li>
-                    <li><em>Navigation Bar</em> with links that move to different sections of the page</li>
-                    <li><em>About Section</em> with a small blurb of who we are</li>
-                    <li><em>Gallery</em> of our "work" with several images that have scroll-over descriptions of our
-                        work
-                    </li>
-                    <li><em>Contact Section</em> with a dummy form to get into contact with our audience</li>
-                </ul>
-                <p>
-                    And this is what we're starting with!
-                </p>
-                <div class="blank-box-container">
-                    <span class="blank-box"></span>
-                </div>
-                <p>
-                    That's right. From blank page to a full-fledged online portfolio. Let's get started learning!
-                </p>
-            </section>
-            <section class="html-tutorial">
-                <h3>Software Needed</h3>
-                <p>
-                    The software we will be using to build our HTML/CSS project is called <a
-                        href="https://glitch.com">Glitch</a>. Glitch is an interactive programming environment that
-                    allows
-                    you to edit and run code directly on your internet browser, making it very convenient for our
-                    purpose
-                    since we can skip any further setup process.
-                </p>
-                <p>
-                    Overall, it's a big time-saver and you can even download your project straight off of the
-                    environment
-                    when you are done developing! Go ahead and make your way over to <a
-                        href="https://glitch.com">Glitch</a>
-                    and click on <i><b>New Project</b></i>, then hit <i><b>hello-webpage</b></i> to get started. You
-                    should
-                    see a couple screens like the ones provided below.
-                </p>
-                <figure>
-                    <div class="image-container">
-                        <img src="img/glitch_home.png">
-                        <img src="img/2020-04-16-1587076424_screenshot_943x938.jpg">
-                    </div>
-                    <figcaption>Home screen and project screen once you navigate to 'hello-webpage'</figcaption>
-                </figure>
-                <p>
-                    You should find a list, or <b class="term">directory</b>, of files on the left side of the project
-                    screen. Click
-                    on <code>index.html</code> as this will be where all of our HTML is going to take place.
-                </p>
-                <p>
-                    Notice that the file extension is <code>.html</code> so this will allow web browsers and computers
-                    to process our file as an HTML document! We could actually create a new file on our computer with
-                    this extension and it would be processed the same way.
-                </p>
-                <p>
-                    Here's the page you should be seeing:
-                </p>
-                <figure>
-                    <div class="image-container">
-                        <img src="img/glitch_indexpage.jpg" alt="">
-                    </div>
-                    <figcaption>The 'index.html' page where all our HTML code will be written</figcaption>
-                </figure>
-                <p>
-                    There are several important components on this page I would like to highlight and will make it
-                    easier for you to use the editor.
-                </p>
-                <figure>
-                    <div class="image-container">
-                        <img src="img/glitch_indexpage_edited.png" alt="">
-                    </div>
-                </figure>
-                <ul>
-                    <li>The pink region represents your editor where you will type all of your code</li>
-                    <li>The green region is the <b><i>Show</i></b> button which will allow you to preview what your page
-                        looks like in the present state of your code</li>
-                    <li>The blue region is your directory list which is a hierarchy of how your files are organized</li>
-                </ul>
-                <ul>
+            
 
-                </ul>
-                <p>
-                    Even if this looks daunting to you, then rest assured, you will come out of this knowing every
-                    single bit of what is on the page right now. We're actually going to start off clearing a few parts
-                    of the page to get a minimal HTML page running.
-                </p>
-                <ol>
-                    <li>Highlight all of the text in the editor from <code class="prettyprint">&lth1&gt...</code> on
-                        <b>Line 16</b> to <code class="prettyprint lang-html">...&lt/script&gt</code> on <b>Line 25</b>
-                    </li>
-                    <li><b>Backspace</b> it away!</li>
-                </ol>
-                <figure>
-                    <div class="image-container">
-                        <img src="img/glitch_indexpage_basic.jpg" alt="">
-                    </div>
-                    <figcaption>Your page after removing the elements in the 'body' section</figcaption>
-                </figure>
-                <h3>The Basic, Minimal Structure of HTML</h3>
-                <p>
-                    Right now, you are looking at the bare minimum for an HTML page to run. If you preview your page
-                    with the <b><i>Show</i></b> button then you should see a blank, white page. If you look up at your
-                    tabs, the tab title will be <b>Hello!</b>.
-                </p>
-                <p>
-                    So what's going on here? Somehow the code we have written so far is generating this page with a
-                    title that is eerily similar to the text written in the <code
-                        class="prettyprint">&lttitle&gt ...</code> <code class="prettyprint">&lt/title&gt</code>
-                    section.
-                </p>
-                <p>
-                    Let's break it down piece-by-piece!
-                    <ul>
-                        <li><code class="prettyprint lang-html">&lt!DOCTYPE html&gt</code> is telling our browser to
-                            parse our document as an HTML file</li>
-                        <li><code class="prettyprint">&lthtml&gt</code> is an element that will always be the root, or
-                            most broad level, of our document</li>
-                        <li><code class="prettyprint">&lthead&gt</code> gives meta information about our webpage like
-                            page description, document author, etc. Search engines can use this information to help find
-                            your website. You won't see this metadata show up on your page, but it can be super
-                            useful--there are coders whose entire job is to optimize for search engine relevancy!</li>
-                        <li><code class="prettyprint">&lttitle&gt</code> is a tag for a title element on our webpage
-                            which will show up on the tab like was previously mentioned</li>
-                        <li>The <code class="prettyprint">&ltbody&gt</code> tag is where things get interesting for
-                            building visual elements since it captures all the visible content that we will provide!
-                        </li>
-                    </ul>
-                    For now, let's try changing the text in the title tag to <b>My Portfolio</b> and writing whatever we
-                    want in the area bounded by <code class="prettyprint">&ltbody&gt...&lt/body&gt</code>
-                </p>
-                <figure>
-                    <div class="image-container">
-                        <img src="img/glitch_indexpage_edited2.jpg" alt="">
-                        <img src="img/glitch_changetitle_result.jpg" alt="">
-                    </div>
-                    <figcaption>You've made the first modifications to your website!</figcaption>
-                </figure>
-                <h3>Tags and Their Attributes</h3>
-                <p>
-                    We're about to start handling the big work of making our portfolios, but there are a couple more
-                    topics
-                    that are crucial to understand before we begin.
-                </p>
-                <p>
-                    I've mentioned <b class="term">tags</b> a few times and you might be wondering what those are. Tags
-                    are
-                    essentially labels for our elements, denoted by angle brackets. At this point, you've already seen
-                    several appear in our basic document and I'd like for you to get an idea of how to write them as
-                    well as a few examples that we will be using to make our portfolio.
-                    <ul>
-                        <li>Most tags come <b>in pairs</b> with the closing tag containing a <code
-                                class="prettyprint">/</code>. An example of this is <code
-                                class="prettyprint">&lttitle&gt...&lt/title&gt</code> or <code
-                                class="prettyprint">&ltbody&gt...&lt/body&gt</code></li>
-                        <li>This starting and ending tag formulation will tell the browser where your element section
-                            starts and ends with all the content going in-between</li>
-                    </ul>
-                </p>
-                <p>
-                    And here are a few important tags we'll be working with:
-                    <ul>
-                        <li><code class="prettyprint">&ltdiv&gt</code>: A more general and commonly used tag, this
-                            defines a general
-                            division or section of our HTML document</li>
-                        <li><code class="prettyprint">&ltp&gt</code>: A paragraph element. In HTML, you won't be able to
-                            change how your text looks the usual way--you can't just add extra spaces or lines in your
-                            code--and
-                            this tag will help you write the text for browsers</li>
-                        <li><code class="prettyprint">&lta&gt</code>: The anchor tag supports hyperlinks which will be
-                            used to link to other webpages or even a specific area on our own website</li>
-                        <li><code class="prettyprint">&ltimg&gt</code>: This tag allows you to insert images into your
-                            HTML site. You will specify a file name for it to determine which image is displayed</li>
-                        <li><code class="prettyprint">&ltform&gt</code>: This tag will create a form with multiple
-                            fields that a user on your website can put information in. This will make up the contact
-                            form portion of our portfolio</li>
-                    </ul>
-                </p>
-                <p>
-                    I want to mention that there are many different tags than the ones I've listed and that some of them
-                    will come into play in our own project. However, the tags I've listed have the most distinct
-                    functions in our project so I've chosen to highlight them.
-                </p>
-                <p>
-                    Let's add two of these elements into our document now. Inside our <code
-                        class="prettyprint">&ltbody&gt</code> element area, we'll add a <code
-                        class="prettyprint">&ltp&gt</code> enclosing our text and a <code
-                        class="prettyprint">&ltdiv&gt</code> enclosing both of these elements.
-                </p>
-                <figure>
-                    <div class="image-container">
-                        <img src="img/glitch_tagsexplained_1.jpg" alt="">
-                    </div>
-                    <figcaption>We now have a 'div' and a 'p' tag in our document</figcaption>
-                </figure>
-                <p>
-                    You won't be seeing any visible changes when you preview your page, but notice how we're actually
-                    putting our <code class="prettyprint">&ltp&gt</code> tag inside of the <code
-                        class="prettyprint">&ltdiv&gt</code> tag. This is what we call <b class="term">nesting</b> and
-                    it plays an important part in how our elements interact together, especially as we begin to look at
-                    special characteristics of tags called <b class="term">attributes</b>.
-                </p>
-            </section>
-            <section class="section3">
-                <h3>Attributes and Nesting</h3>
-                <p>
-                    Conceptually, we can think of all of our elements as parents, children, and descendants. Our <code
-                        class="prettyprint">&ltdiv&gt</code> <em>is a parent</em> to the <code
-                        class="prettyprint">&ltp&gt</code> element because the latter is declared directly within the
-                    former. We call this type of relationship <b class="term">nested elements</b> because we are nesting
-                    one element in another. In fact, the <code class="prettyprint">&ltdiv&gt</code> and <code
-                        class="prettyprint">&ltp&gt</code> are both nested inside the <code
-                        class="prettyprint">&ltbody&gt</code>.
-                </p>
-                <p>
-                    However, if we were to nest another element inside the <code class="prettyprint">&ltp&gt</code> tag
-                    then it would become a <em>descendant</em> of the original <code
-                        class="prettyprint">&ltdiv&gt</code>. Our <code class="prettyprint">&ltdiv&gt</code> would be a
-                    grandparent!
-                </p>
-                <p>
-                    This understanding of relationships between elements is especially important as we start getting
-                    into <b class="term">attributes</b>. Attributes are characteristics we assign to HTML elements
-                    inside the opening tag like what images will be displayed by the <code
-                        class="prettyprint">&ltimg&gt</code> tag, what link or section our <code
-                        class="prettyprint">&lta&gt</code> tag points towards, or even how we group elements together.
-                </p>
-                <p>
-                    We can insert an image in our document now by adding an <code class="prettyprint">&ltimg&gt</code>
-                    tag like so: <code class="prettyprint">&ltimg src=<em>"link"</em> alt=<em>"alt text"</em>&gt</code>.
-                    I will be using a sample image that I will leave for you to download or feel free to download and
-                    save your own. Just make sure to upload it to the Glitch <code>assets/</code> folder by clicking on
-                    the folder and pressing <b><i>Upload an Asset</i></b>.
-                </p>
-                <p>
-                    Sample image: <a href="img/john_dewey.jpg" download="john_dewey">John Dewey</a>
-                </p>
-                <p>
-                    When you upload your image, make sure to copy the URL that displays when you click on your image.
-                    This will go inside the <code>src</code> attribute of the <code class="prettyprint">&ltimg&gt</code>
-                    tag.
-                </p>
-                <figure>
-                    <div class="image-container">
-                        <img src="img/glitch_attributesexplained_1.png" alt="">
-                        <img src="img/glitch_attributesexplained_2.jpg" alt="">
-                        <img src="img/glitch_attributesexplained_imgresult.jpg" alt="">
-                    </div>
-                    <figcaption>Progress of your page so far when uploading an image</figcaption>
-                </figure>
-                <p>
-                    Due to the nature of Glitch, we actually store a copy of our image file on their databases and we
-                    use the copied URL to reference the image in the database. However, in an independent project, we
-                    could have also referenced the file in our project itself such as <code
-                        class="prettyprint">&ltimg src="image.jpg" alt="An Image"&gt</code> with our file structure
-                    looking like this:
-                    <pre>
-                    project
-                    |   README.md 
-                    |   index.html
-                    |   script.js
-                    |   style.css
-                    |   image.jpg
-                    </pre>
-                </p>
-                <p>
-                    I won't go into much further detail about directories and file structure since that isn't our focus
-                    right now. However, I'm hoping you can see HTML attributes at play when we use them in our <code
-                        class="prettyprint">&ltimg&gt</code> tag. In this case, we are using attributes to specify what
-                    image is displayed when we use <code class="prettyprint">&ltimg&gt</code> in our HTML document.
-                </p>
-                <p>
-                    Notice too that our <code class="prettyprint">&ltimg&gt</code> element is now parented by the <code
-                        class="prettyprint">&ltdiv&gt</code> element and is a child of it as well alongside our <code
-                        class="prettyprint">&ltp&gt</code> element. We can also think of the <code
-                        class="prettyprint">&ltdiv&gt</code> as <em>containing</em> these other elements so that it
-                    forms a kind of functional grouping of them. When it comes to styling our page with CSS, we'll use this grouping to our advantage.
-                </p>
-            </section>
-            <section>
-                <h3>Modeling Our Page with HTML</h3>
-                <p>
-                    Now it's time to dig in deep with creating our very first website in HTML! It won't look pretty at first, but we want to lay out the skeleton for our website before we get into the matter of what colors and styles we want to paint onto it.
-                </p>
-                <p>
-                    <em class="bold">Note: Each designer/developer will have their own preference of workflow. Some may choose to style elements as they go, others may take a more topdown approach of writing out all of their HTML out before getting to the styling. As any developer gains more experience, it's encouraged to try out different approaches. For now, we'll take the topdown approach.</em> 
-                </p>
-                <p>
-                    
-                </p>
-            </section>
-            <section class="glossary">
-                <h3>Glossary</h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
+<h1>Brief Practical Crash Course in HTML/CSS</h1>
+<small>2020-04-24</small>
+<h2>From Bare Bones Page to Online Website</h2>
+
+<p>I wanted to make this webpage for the hobbyists/students/I-avoid-computers-and-code-because-they-are-so-confusing advocates (and specifically future educators who might be interested in having some nice tools in their repertoire) that don't know too much about programming to help them realize, mainly, three things:</p>
+
+<ul>
+<li>Programming doesn't have to be scary. There's actually a lot of intuition to be found in it once you understand some basics.</li>
+<li>Programming can be fun. There's a lot of useful and creative outlets that it can be used for which is why I specifically chose HTML/CSS--I believe it represents the most aesthetic view of writing code.</li>
+<li>I suppose this is a derivative of the last point, but programming is an art. This is something I'm still learning, but the deeper you go with it the more you realize there are elements of design, creativity, and exploration in programming.</li>
+</ul>
+
+<p>Before I go any further, I want you to know what we're even working with here and <em>why</em>. What is <strong>HTML</strong>? What is <strong>CSS</strong>? And <strong>why do we want to learn them</strong>?</p>
+
+<hr/>
+
+<h2>HTML? Who's that?</h2>
+
+<p>HTML is a convenient acronym (there are A LOT of acronyms in software) for <strong>Hyper Text Markup Language</strong>. I will be referring to this as HTML from hereon out because I'm sane. </p>
+
+<p>Basically, you use HTML to write up what goes on your webpage from text and images to actual areas containing these elements. You can think of the web coder at this point as an artist deciding where his painting should go and what content should go on the canvas.</p>
+
+<p>Broadly, here's what HTML consists of and what you will be seeing later when you get to work with it!</p>
+
+<ul>
+<li>HTML is a series of elements that tell an Internet browser how to display your content</li>
+<li>Every element is represented by special <strong>tags</strong> which we will get to learn about mroe in-depth later</li>
+<li>Tags label the content that you put onto the webpage</li>
+</ul>
+
+<p>HTML's current version, HTML5, emphasizes a "standard" way of declaring elements in our document such that writing and reading the code is much easier to achieve the same results of what we want to write.</p>
+
+<p>Here is an example of a purely HTML page. It might remind you of an old '90s era website.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/bad_90s.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>An example of pure HTML</figcaption>
+
+</figure>
+
+<hr/>
+
+<h2>CSS? Sounds Fancy.</h2>
+
+<p>CSS stands for <strong>Cascading Style Sheets</strong>. Like the title implies, this is the tool we use to style our webpage: CSS designates the overall layout of the HTML elements and what they look like. The web coder as an artist is using his paint strokes and arranging the designs on his painting--however, CSS goes a lot deeper than thsi and there are some increidble designs and layouts you can make of it that you will get to create!</p>
+
+<p>Broadly, here's what CSS consists of:</p>
+
+<ul>
+<li>A wide variety of attributes and characteristics you can apply to your elements (e.g. color, spacing, font size, padding)</li>
+<li>We will see this more later: By nature of design, you can inherit of share these characteristics between elements by only having to write a CSS statement once</li>
+<li><em>Inline</em>: You style the look and layout of each element individually</li>
+<li><em>Internal</em>: You create a special section in your webpage which decides the overall style of your webpage</li>
+<li><em>External</em>: You create a special file outside of your HTML document that is connected to it and still styles the HTML elements</li>
+</ul>
+
+<p>Here is an example of CSS at work!</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/yangrchen_landing.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>An example of CSS styling the page</figcaption>
+
+</figure>
+
+<hr/>
+
+<h2>Distinguishing HTML and CSS</h2>
+
+<p>If HTML forms the structure of our document, then CSS should provide the presentation of it. HTML does not so much focus on the style as what information we are trying to convey to a user and CSS is the opposite. This is mainly a design philosophy called <strong>semantic HTML</strong> that we should be aware of as we develop our project.</p>
+
+<p>In particular, HTML5 was created with this distinction in mind with its variety of semantic features for writing HTML and many of the methods we'll be learning about for HTML are a result of this. </p>
+
+<hr />
+
+<h2>Motivation</h2>
+
+<p>So why learn all of this? We want to make a website! Websites are an awesome way to digitally express something we find of interest whether that's a forum, a blog, or even a personal gallery. In a sense, they are also a means to communicate something between people. Your favorite social media websites like Facebook and Twitter as well as email services like Gmail operate on a lot of the same material that we will be looking at here.</p>
+
+<p>It's obvious that many of the services we use in our daily lives operate as websites and to that end they are incredibly important. But it can be kind of difficult to understand where they come from let alone how to make one yourself. That's why this page exists. I want to show you that it can be a lot more intuitive than you might think. This is also the beginning of you being able to express yourself in a remarkably creative manner where the possibilities are endless. You don't have to be a programmer to understand how to build websites from scratch. </p>
+
+<p><strong><em>As an Educator</em></strong>: Building your own website in HTML and CSS provides you a new means of creating learning opportunities for everyone you mentor. You will also be able to take responsibility for harnessing a new mode of expression and the process of learning can also teach you how you might best fit in different learning environments. As a student, I am very excited to be able to share this with you because I believe technology, when used right, can create a massive, positive impact for public education. </p>
+
+<p>HTML and CSS are the bread and butter of creating a website. There is also a cross platform scripting language called JavaScript which defines the <em>behaviour</em> of a website, but we will focus on HTML and CSS for now because there's already so much you can do with these two tools.</p>
+
+<hr/>
+
+<h2>Our End Goal</h2>
+
+<p>My primary goal here is to get you learning through hands-on experience. Throughout this tutorial, we will be building a personal online portfolio for you to create and use. </p>
+
+<p>To get the most out of your learning, I strongly recommend following along each step and typing the code out by hand when we get to developing.</p>
+
+<p>I want to give you the raw, fundamental tools of web development and a shiny new product that you can expand on with your learning as you see fit.</p>
+
+<p>I have a few sample images of what the final product will eventually look like for you to see, but you can also check out <a href="example/">the website</a> itself and play around with it.</p>
+
+<p>Our portfolio represents a single page that showcases all of the glorious work we've gathered. You'll notice there are several important components that we will be building for our website: </p>
+
+<ul>
+<li><em>Welcome Section</em> with our title and a showcase of our lovely visage</li>
+<li><em>Navigation Bar</em> with links that move to different sections of the page</li>
+<li><em>About Section</em> with a small blurb of who we are</li>
+<li><em>Work Gallery</em>  with several images that have scroll-over descriptions of our work</li>
+<li><em>Contact Section</em> with a dummy form interface to get into contact with our audience</li>
+</ul>
+
+<p>And this is what we're starting with!</p>
+
+<div class="blank-box-container">
+    <span class="blank-box"></span>
+</div>
+
+<p>That's right. From blank page to a full-fledged online portfolio. Let's get started learning!</p>
+
+<hr/>
+
+<h2>Software Needed</h2>
+
+<p>The software we will be using to build our HTML/CSS project is called <a href="https://glitch.com/">Glitch</a>. Glitch is an interactive programming environment that allows you to edit and run code directly on your internet browser, making it very convenient for our purpose since we can skip and further setup process.</p>
+
+<p>Overall, it's a big time-saver and you can even download your project straight off of the environment when you are done developing! Go ahead and make your way over to <a href="https://glitch.com/">Glitch</a> and click on <strong><em>New Project</em></strong>, then hit <strong><em>hello-webpage</em></strong> to get started. You should see a couple screens like the ones provided below.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_home.svg" alt="alttext" />
+<img src="img/2020-04-16-1587076424_screenshot_943x938.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>Home screen and project screen once you navigate to 'hello-webpage'</figcaption>
+
+</figure>
+
+<p>You should find a list, or <strong>directory</strong>, of files on the left side of the project screen. Click on <code>index.html</code> as this will be where all of our HTML is going to take place.</p>
+
+<p>Notice that the file extension is <code>.html</code> so this will allow web browsers and computers to process our file as an HTML document! We could actually create a new file on our computer with this extension and it would be processed the same way.</p>
+
+<p>Here's the page you should be seeing:</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_indexpage.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>The 'index.html' page where all our HTML code will be written</figcaption>
+
+</figure>
+
+<p>There are several important components on this page I would like to highlight and will make it easier for you to use the editor.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_indexpage_edited.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption></figcaption>
+
+</figure>
+
+<ul>
+<li>The pink region represents your editor where you will type all of your code</li>
+<li>The green region is the <strong><em>Show</em></strong> button which will allow you to preview what your page looks like in the present state of your code</li>
+<li>The blue region is your directory list which is a hierarchy of how your files are organized</li>
+</ul>
+
+<p>Even if this looks daunting to you, then rest assured, you will come out of this knowing every single bit of what is on the page right now. We're actually going to start of clearing a few parts of the page to get a minimal HTML page running.</p>
+
+<ol>
+<li>Highlight all of the text in the editor from <code class="prettyprint">&lt;h1&gt;...</code> on <strong>Line 16</strong> to <code class="prettyprint">&lt;/script&gt;</code> on <strong>Line 25</strong></li>
+<li><strong>Backspace</strong> it away!</li>
+</ol>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_indexpage_basic.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>Your page after removing the elements on the 'body' section</figcaption>
+
+</figure>
+
+<hr/>
+
+<h2>The Basic, Minimal Structure of HTML</h2>
+
+<p>Right now, you are looking at the bare minimum for an HTML page to run. If you preview your page with the <strong><em>Show</em></strong> button then you should see a blank, white page. If you look up at your tabs, the tab title will be <strong>Hello!</strong>.</p>
+
+<p>So what's going on here? Somehow the code we have written so far is generating this page with a title that is eerily similar to the text written in the <code class="prettyprint">&lt;title&gt;...&lt;/title&gt;</code></p>
+
+<p>Let's break it down piece-by-piece!</p>
+
+<ul>
+<li><code class="prettyprint">&lt;!DOCTYPE html&gt;</code> is telling our browser to parse our document as an HTML file</li>
+<li><code class="prettyprint">&lt;html&gt;</code> is an element that will always be the root, or most broad level, of our document</li>
+<li><code class="prettyprint">&lt;head&gt;</code> gives meta information about our webpage like page description, document author, etc. Search engines can use this information to help find our website and it will also contain special scripts we may want to run as well. You won't see this metadata show up on your page, but it can be super useful--there are coders whose entire job is to optimize for search engine relevancy!</li>
+<li><code class="prettyprint">&lt;title&gt;</code> is a tag for a title element on our webpage which will show up on the tab like was previously mentioned</li>
+<li><code class="prettyprint">&lt;body&gt;</code> tag is where things get interesting for building visual elements since it captures all the visible content that we will provide</li>
+</ul>
+
+<p>For now, let's try changing the text in the title tag to <strong>My Portfolio</strong> and writing whatever we want in the area bounded by <code class="prettyprint">&lt;body&gt;...&lt;/body&gt;</code></p>
+
+<pre>
+    <code class="prettyprint">
+    &lt;title&gt;My Portfolio&lt;/title&gt;
+    ...
+    &lt;body&gt;
+        <em>Insert my text here</em>
+    &lt;/body&gt;
+    </code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_changetitle_result.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>You've made the first modifications to your website!</figcaption>
+
+</figure>
+
+<p>As our project grows, it might become difficult to keep track of what each element is doing. In many programming languages, we have the ability to write <strong>comments</strong> or lines which do not get interpreted as code by the compiler and are solely for user documentation.</p>
+
+<pre>
+    <code class="prettyprint">
+    &lt;body&gt;
+    &lt;!-- This is an example of a comment! --&gt;
+    &lt;/body&gt;
+    </code>
+</pre>
+
+<p>If you preview your page again, you will not see the comment appear on the page. Comments can be very useful notes to you or even other people who may review your code. I recommend keeping comments on your code as we continue to make progress.</p>
+
+<hr/>
+
+<h2>Tags and Their Attributes</h2>
+
+<p>We're about to start handling the big work of making our portfolios, but there are a couple more topics that are crucial to understand before we begin.</p>
+
+<p>I've mentioned <strong>tags</strong> a few times and you might be wondering what those are. Tags are essentially labels for our elements, denoted by angle brackets. At this point, you've already seen several appear in our basic document and I'd like for you to get an idea of how to write them as well as a few exampels that we will be using to make our portfolio.</p>
+
+<ul>
+<li>Most tags come <em>in pairs</em> with the closing tag containing a <code>/</code>. An example of this is <code class="prettyprint">&lt;title&gt;...&lt;/title&gt;</code> or <code class="prettyprint">&lt;body&gt;...&lt;/body&gt;</code></li>
+<li>This starting and ending tag formulation will tell the browser where your element section starts and ends with all the content going in-between</li>
+</ul>
+
+<p>And here are a few important tags we'll be working with:</p>
+
+<ul>
+<li><code class="prettyprint">&lt;div&gt;</code>: A more general and commonly used tag, this defines a general division or section of our HTML document</li>
+<li><code class="prettyprint">&lt;section&gt;</code>: Can be used to divide our document into sections and subsections and has replaced the <code class="prettyprint">&lt;div&gt;</code> to divide up semantic information for use cases like pairing headings with paragraph sections</li>
+<li><code class="prettyprint">&lt;nav&gt;</code>: This tag defines a set of navigational links which we can provide as separate tags. Before the navigation tag, it used to be much more convoluted to create a navigational menu</li>
+<li><code class="prettyprint">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, ... , &lt;h6&gt;</code>: Headings are titles that get displayed on our page. With each level of heading (up to 6) the font becomes smaller</li>
+<li><code class="prettyprint">&lt;ul&gt;, &lt;li&gt; </code>: Unordered list and list item. If you wrap something as an unordered list you will essentially make a bulleted list. We use a list item to denote individual items in the list</li>
+<li><code class="prettyprint">&lt;p&gt;</code>, <code class="prettyprint">&lt;br /&gt;</code>: A paragraph element and break tag. In HTML, you won't be able to change how your text looks the usual way--you can't just add extra spaces or lines in your code--and paragraph tag will help you write the text for browsers. Break tags will create a line break in your document.</li>
+<li><code class="prettyprint">&lt;a&gt;</code>: The anchor tag supports hyperlinks which will be used to link to other webpages or even a specific area on our own webpage</li>
+<li><code class="prettyprint">&lt;img&gt;</code>: This tag allows you to insert images into your HTML site. You will specify a file name for it to determine which image is displayed</li>
+<li><code class="prettyprint">&lt;form&gt;</code>: This tag will create a form with multiple fields that a user on your website can put information in. This will make up the contact form portion of our portfolio</li>
+</ul>
+
+<p>I know this list might seem overwhelming or difficult to remember, so here is a visual example of these tags at work in our browser so you can get a good picture of how they will appear.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/quick_markup.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>An overview of some tags I've mentioned</figcaption>
+
+</figure>
+
+<p>I want to mention that there are many different tags than the ones I've listed and that some of them will come into play in our own project. However, the tags I've listed have the most distinct functions in our project so I've chosen to highlight them.</p>
+
+<p>Let's add two of these elements into our document now. Inside our <code class="prettyprint">&lt;body&gt;</code> element area, we'll add a <code class="prettyprint">&lt;p&gt;</code> enclosing our text and a <code class="prettyprint">&lt;div&gt;</code> enclosing both of these elements.</p>
+
+<pre>
+    <code class="prettyprint">
+
+    </code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_tagsexplained_1.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>We now have a 'div' and a 'p' tag in our document</figcaption>
+
+</figure>
+
+<p>You won't be seeing any visible changed when you preview your page, but notice how we're actually putting our <code class="prettyprint">&lt;p&gt;</code> tag inside of the <code class="prettyprint">&lt;div&gt;</code>tag. This is what we call <strong>nesting</strong> and it plays an important part in how our elements interact together, especially as we begin to look at special characteristics of tags called <strong>attributes</strong>.</p>
+
+<hr />
+
+<h2>Attributes and Nesting</h2>
+
+<p>Conceptually, we can think of all of our elements as parents, children, and descendants. Our <code class="prettyprint">&lt;div&gt;</code> is a <em>parent</em> to the <code class="prettyprint">&lt;p&gt;</code> element because we declared it inside of the <code class="prettyprint">&lt;p&gt;</code> tag. We call this type of relationship <strong>nesting</strong>. In fact, the <code class="prettyprint">&lt;div&gt;</code> and <code class="prettyprint">&lt;p&gt;</code> are both nested inside the <code class="prettyprint">&lt;body&gt;</code>.</p>
+
+<p>However, if we were to nest another element inside the <code class="prettyprint">&lt;p&gt;</code> tag then it becomes a <em>descendant</em> of the original <code class="prettyprint">&lt;div&gt;</code>. Our <code class="prettyprint">&lt;div&gt;</code> would be a grandparent!</p>
+
+<p>This understanding of relationships between elements is especially important as we start getting into <strong>attributes</strong>. Attributes are characteristics we assign to HTML elements inside the opening tag like what images will be displayed by the <code class="prettyprint">&lt;img&gt;</code> tag, what link or section our <code class="prettyprint">&lt;a&gt;</code> tag points towards, or even how we group elements together.</p>
+
+<p>We can embed an image in our document now by adding an <code class="prettyprint">&lt;img&gt;</code> tag like so: <code class="prettyprint">&lt;img src=<em>"link"</em> alt=<em>"alt text"</em>&gt;</code>.</p>
+
+<p>Go ahead and download this sample image. Just make sure to upload it to the Glitch <code>assets/</code> folder by clicking on the folder and pressing <strong><em>Upload an Asset</em></strong>. </p>
+
+<p>Sample image: <a href="img/round_kitty.jpg">Round Kitty</a></p>
+
+<p>When you upload your image, make sure to copy the URL that displays when you click on your image. This will go inside the <code>src</code> attribute of the <code class="prettyprint">&lt;img&gt;</code> tag.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_attributesexplained_1.svg" alt="alttext" />
+<img src="img/glitch_attributesexplained_2.svg" alt="alttext" />
+<img src="img/glitch_attributesexplained_imgresult.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>Progress of your page so far when uploading an image</figcaption>
+
+</figure>
+
+<p>Due to the nature of Glitch, we actually store a copy of our image file on their databases and we use the copied URL to reference the image in the database. However, in an independent project, we could have also referenced the file in our project itself such as <code class="prettyprint">&lt;img src="img/image.jpg" alt="An Image"&gt;</code> with our file structure looking like this:</p>
+
+<pre>
+    <code>
+    project
+    |   README.md 
+    |   index.html
+    |   script.js
+    |   style.css
+    |   img/
+    ----|   image.jpg
+    </code>
+</pre>
+
+<p>If you are interested in seeing how you can set this up in Glitch, read the <a href="">Referencing Image Files Locally in Glitch</a> section; otherwise, feel free to move on to the next section!</p>
+
+<p>I won't go into much further detail about directories and file structure since that isn't our focus right now. However, I'm hoping you can see HTML attributes at play when we use them in our <code class="prettyprint">&lt;img&gt;</code> tag. In this case, we are using attributes to specify what image is displayed when we use <code class="prettyprint">&lt;img&gt;</code> in our HTML.</p>
+
+<p>Notice too that our <code class="prettyprint">&lt;img&gt;</code> element is now parented by the <code class="prettyprint">&lt;div&gt;</code> element and is a child of it as well alongside our <code class="prettyprint">&lt;p&gt;</code> element. We can also think of the <code class="prettyprint">&lt;div&gt;</code> as <em>containing</em> these other elements so that it forms a kind of functional grouping of them. When it comes to styling our page with CSS, we'll use these groupings to style multiple sections at once.</p>
+
+<h3>Referencing Image Files Locally in Glitch</h3>
+
+<p>There is a command terminal in Glitch from which we can run useful program commands from. One we will use specifically to create a local folder in our project is <code>mkdir</code> which will allow us to create a directory/folder in in our project.</p>
+
+<p>You can access the terminal by selecting <strong><em>Tools</em></strong> in the bottom left of your screen. Once you have the panel open, select <strong><em>Terminal</em></strong> and a new panel should open up presenting you with the terminal interface.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_terminal.svg" alt="alt text" />
+<img src="img/glitch_terminal_open.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>The Glitch command terminal</figcaption>
+
+</figure>
+
+<p>I will use a sample Android image for example. After uploading, the Android image to <code>assets/</code>, I copy the URL like I did in the previous section.</p>
+
+<p>Now run the following code to create a local <code>img/</code> folder so that we can upload image files to this new folder:</p>
+
+<pre>
+    <code class="prettyprint">
+    $ mkdir img
+    $ cd img
+    $ wget -O <em>new_file_name android_URL</em>
+    $ refresh
+    </code>
+</pre>
+
+<p>Make sure to leave a space between what you write as <code>new_file_name</code> and <code>android_URL</code>.</p>
+
+<p>After running these commands, you can close the terminal. The commands we executed will refresh your files and update your editor with any console-created files. You should now see an <code>img/</code> folder in your project with a new image file that has the name you specified.</p>
+
+<p><strong>Fun fact</strong>: <code>mkdir</code> and <code>cd</code> are commands that can be used in your local Windows or MacOS command shells as well. I'll leave it up to your curiosity to try them out. Don't worry, they won't break your computer.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/glitch_terminal_newfile.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>Your project directory with the new img folder</figcaption>
+
+</figure>
+
+<hr/>
+
+<h2>Modeling Our Page with HTML</h2>
+
+<p>Now it's time to dig in deep with creating our very first website in HTML! It might not look pretty at first, but we want to lay out the skeleton for our website before we get into the matter of what colors and styles we want to paint onto it.</p>
+
+<p><strong><em>Note: Each designer/developer will have their own preference of workflow. Some may choose to style elements as they go, others may take a more topdown approach of writing out all of their HTML out before getting to the styling. As any developer gains more experience, it's encouraged to try out different approaches to find which one suits you. For now, we'll take the topdown approach.</em></strong></p>
+
+<p>We're going to <em>modularize</em> our project. That is, we'll separate each section into independent components that will come together for the final product.</p>
+
+<p>I like to encapsulate each project component in separate <code class="prettyprint">&lt;section&gt;</code> tags that way if I ever have to change anything about a specific section I can change the corresponding <code class="prettyprint">&lt;section&gt;</code>. This is also a good practice for when the scale of our project grows larger. We want to be able to understand how to quickly and cleanly contribute to our project.</p>
+
+<p>To refresh your memory, here are the components we are building:</p>
+
+<ul>
+<li><strong>Welcome Section</strong></li>
+<li><strong>About Section</strong></li>
+<li><strong>Navigation Bar</strong></li>
+<li><strong>Work Section</strong></li>
+<li><strong>Contact Section</strong></li>
+</ul>
+
+<hr />
+
+<h3>Welcome Section</h3>
+
+<p>The welcome section will be a <code class="prettyprint">&lt;section&gt;</code> containing a profile image, a main title, and a subtitle. In HTML, this means that we will include a header tag for our name, an <code class="prettyprint">&lt;img&gt;</code> tag for our profile image, and a <code class="prettyprint">&lt;p&gt;</code> tag for our subtitle.</p>
+
+<p>Luckily, we won't have to do much work on this part since all we really have to do is rearrange our <code class="prettyprint">&lt;img&gt;</code> and <code class="prettyprint">&lt;p&gt;</code> tags then add a header!</p>
+
+<p>By convention, the main title of our page is usually written with <code class="prettyprint">&lt;h1&gt;</code>. We want our name to gleam and shine for the whole world to see! Make it big and important with <code class="prettyprint">&lt;h1&gt;</code>.</p>
+
+<pre>
+<code class="prettyprint">
+&lt;body&gt;
+    &lt;section&gt;
+        &lt;h1&gt;<em> Name goes here </em>&lt;/h1&gt;
+        &lt;img src=<em>"Link to round kitty"</em> alt="Round Kitty"&gt;
+        &lt;p&gt;<em> Catchy phrase goes here </em>&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/body&gt;
+</code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_welcome_1.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>Our HTML with the welcome section added</figcaption>
+
+</figure>
+
+<p>And that's it! Would you believe me if I said that the next section is even easier?</p>
+
+<hr />
+
+<h3>About Section</h3>
+
+<p>We provide our readers with a brief description of ourselves. Something short and sweet that highlights a few things about us. Again, we will use a <code class="prettyprint">&lt;section&gt;</code> to wrap our section. In this case, since all we are doing is writing a short blurb we just need a <code class="prettyprint">&lt;p&gt;</code> tag:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;body&gt;
+    &lt;section&gt;
+        &lt;h1&gt;<em> Name goes here </em>&lt;/h1&gt;
+        &lt;img src=<em>"Link to round kitty"</em> alt="Round Kitty"&gt;
+        &lt;p&gt;<em> Catchy phrase goes here </em>&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+        &lt;p&gt;<em> Write your blurb here </em>&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/body&gt;
+</code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_about_1.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>Our HTML with the about section added</figcaption>
+
+</figure>
+
+<hr />
+
+<h3>Navigation Bar</h3>
+
+<p>With HTML5, HTML designates a specific <code class="prettyprint">&lt;nav&gt;</code> tag for a navigation bar. We can wrap this tag over as many <code class="prettyprint">&lt;a&gt;</code> tags as we need for each link in the navigation bar. In this case, we will just be using 3 links to direct the user to 1) the about, 2) the work, 3) the contact.</p>
+
+<pre>
+<code class="prettyprint">
+&lt;body&gt;
+    &lt;section&gt;
+        &lt;h1&gt;<em> Name goes here </em>&lt;/h1&gt; 
+        &lt;img src=<em>"Link to round kitty"</em> alt="Round Kitty"&gt;
+        &lt;p&gt;<em> Write your blurb here </em>&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;nav&gt;
+        &lt;a href=<em>"Link here"</em>&gt;About&lt;/a&gt;
+        &lt;a href=<em>"Link here"</em>&gt;My Work&lt;/a&gt;
+        &lt;a href=<em>"Link here"</em>&gt;Contact Me&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+</code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_nav_1.svg" alt="alttext" /></p>
+
+</div>
+
+<figcaption>Navigation links added to our HTML document</figcaption>
+
+</figure>
+
+<p>You'll notice that we have a new attribute in our <code class="prettyprint">&lt;a&gt;</code> tag. This <code>href</code> attribute indicates where our link will point to. If you want to see how linking to external sites works, try setting one of the <code>href</code> attributes to <strong>https://google.com/</strong> and it should take you to Google's homepage when you click on the link. Later, we will learn about how to link to specific regions on our website.</p>
+
+<hr />
+
+<h3>Work Section</h3>
+
+<p>From hereon, things are going to get a little more involved. Our work section will have a header, six images laid out in a grid-like fashion, and a brief description that fades in over the image when you hover over it.</p>
+
+<p>Remember nesting? While we're going to wrap our work section inside another <code class="prettyprint">&lt;section&gt;</code> tag, we are also going to nest a <code class="prettyprint">&lt;div&gt;</code> inside of it which will contain all of our image-caption elements--this will represent our image gallery. In addition, we will nest our image and captions inside their own <code class="prettyprint">&lt;div&gt;</code> tags.</p>
+
+<p>The idea here is that we are considering the image gallery as one element and each image as their own individual element. As a result, we will be able to make separate changes to our gallery as a whole or to our individual changes as the need arises.</p>
+
+<p>Here are some sample images for you to work with:</p>
+
+<p><a href="img/gallery_images/gallery_images.zip">Gallery Images</a></p>
+
+<p>Now our section with the image gallery and individual image elements will look like this in our code:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;!-- Inside of the body; remainder of code above --&gt;
+&lt;section&gt;
+    &lt;div&gt;
+        &lt;!-- Below is our image element. 
+            You can copy this for each image you use --&gt;
+        &lt;div&gt;
+            &lt;img src=<em>"Image link here"</em> alt=<em>"Alt text here"</em>&gt;
+            &lt;p&gt;<em> Image caption </em>&lt;/p&gt;
+        &lt;/div&gt;
+        ...
+    &lt;/div&gt;
+&lt;/section&gt;
+...
+</code>
+</pre>
+
+<p>If you are using the image links, don't forget to import these images into the <code>assets/</code> folder and use the image URLs in the <code>src</code> attribute of your <code class="prettyprint">&lt;img&gt;</code> tags. </p>
+
+<p>If you are using local images from your <code>img/</code> folder, be sure to run the console commands in the <a href="">Referencing Image Files Locally in Glitch</a> section! You can then reference your image in the <code>src</code> attribute with <code>img/file_name</code>.</p>
+
+<p>At this point, you should see six large images in a single column with captions underneath each of them.</p>
+
+<p>This is the most complicated part of our HTML markup so if you aren't seeing the column of images, try retracing each step carefully.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_work_1.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>The six images appear in a column with their captions underneath</figcaption>
+
+</figure>
+
+<hr />
+
+<h3>Contact Section</h3>
+
+<p>Before we design our form, we will add one more <code class="prettyprint">&lt;section&gt;</code> tag to create our contact section. We'll also add a sub-header inside it to get our contact phrase in.</p>
+
+<pre>
+<code class="prettyprint">
+&lt;section&gt;
+    &lt;h2&gt;Let's get in touch!&lt;/h2&gt;
+&lt;/section&gt;
+</code>
+</pre>
+
+<p>We're now at the final step of laying down all our HTML with HTML forms.</p>
+
+<p>HTML forms allow you to collect user input so that you can process the information in the form of blog comments, mailing lists, e-commerce products, and much, much more. Forms have two components attributed to them: a <em>frontend</em> side and the <em>backend</em> server. </p>
+
+<p>The frontend refers to the look and appearance of the form created through HTML and CSS while the backend refers to the code that processes the information given to the form by the user. We won't be focusing on the backend portion and instead we will be looking to design the frontend interface--what the user will see.</p>
+
+<p>In HTML, every form is designated by the <code class="prettyprint">&lt;form&gt;</code> tag with two important attributes: <code>action</code> and <code>method</code>. We can add a form into our document now with this code:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;form action='' method="get"&gt;
+&lt;/form&gt;
+</code>
+</pre>
+
+<p>The <code>action</code> attribute points to a URL that processes all the information we write in our form. Developers will set up special URLs in a web server to be able to deal with this information in a way that fits with the application they are building. However, we leave this blank in order to redirect back to the page we are on when we <strong><em>Submit</em></strong> our information since we are not dealing with any backend technologies.</p>
+
+<p>The <code>method</code> attribute deals in two common types of requests in web technology: <strong><code>post</code></strong> and <strong><code>get</code></strong>. This relates to how the form gets processed in the web server. The way you can think about these requests is that we use <code>post</code> when we are changing data on the server and <code>get</code> when we are getting data.</p>
+
+<p>In our case, we want to use the <code>get</code> request so we can see the information we send to the form.</p>
+
+<hr />
+
+<h3>Input Elements</h3>
+
+<p>Unlike other HTML elements, forms include special elements called <strong>input elements</strong>. Input elements are what we use for users to put their information in like textboxes, email, radio buttons, or textareas.</p>
+
+<p>We'll start with the most common input element: text inputs.</p>
+
+<h3>Text Inputs</h3>
+
+<p>We'll start off with the name field. Inside our <code class="prettyprint">&lt;form&gt;</code> tag we can insert a text field input using this code:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;form&gt;
+    &lt;input name="full-name" type="text" /&gt;
+&lt;/form&gt;
+</code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_contact_1.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>Your form with the text input added</figcaption>
+
+</figure>
+
+<p>You'll notice there isn't really any indication of what our text input is looking for. To address this, HTML has special <code class="prettyprint">&lt;label&gt;</code> tags which we can associate with our inputs.</p>
+
+<p>We can attach a label now like this:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;form&gt;
+    &lt;label for="full-name-id"&gt;Name:&lt;/label&gt;
+    &lt;input id="full-name-id" name="full-name" type="text" /&gt;
+&lt;/form&gt;
+</code>
+</pre>
+
+
+
         </div>
     </div>
 </body>
-
 </html>
