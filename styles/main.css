@@ -1,10 +1,11 @@
+/* Change background color to be easier on the eyes */
 html, body {
     margin: 0;
     min-height: 100%;
     font-size: 15px;
     line-height: 1.8;
-    background-color: #42f5aa;
-    color: #000;
+    background-color: #2c3833de;
+    color: #eee;
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -49,7 +50,7 @@ figure {
 }
 
 .blank-box {
-    border: 5px solid #000000;
+    border: 5px solid #eeeeee;
     min-width: 20rem;
     padding-bottom: 50vh;
 }
