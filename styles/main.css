@@ -9,11 +9,6 @@ html, body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-/* Miscellaneous */
-.bold {
-    font-weight: bold;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -21,6 +16,10 @@ html, body {
 
 ul li {
     padding: 10px 0;
+}
+
+a {
+    color: #15dbdbea;
 }
 
 .article-container {
@@ -72,11 +71,32 @@ figure {
     box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Code container styling and Google Prettify adjustments */
+
 pre code {
-    background-color: #eee;
+    background-color:#2c3833de;
     border: 1px solid #999;
+    border-radius: 5px;
     display: block;
     padding: 10px 20px;
-    /* font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px; */
+    font-size: 14px; 
 }
+
+.prettyprint {
+    overflow-x: auto;
+}
+
+.prettyprint .tag {
+    color: #0daddd;
+}
+.prettyprint .atn {
+    color: rgb(202, 41, 202);
+}
+.prettyprint .pln {
+    color: #e9e4d5;
+}
+.prettyprint .atv {
+    color: rgb(92, 233, 92);
+}
+
+
