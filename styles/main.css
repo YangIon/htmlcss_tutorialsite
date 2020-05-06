@@ -79,12 +79,13 @@ pre code {
     border-radius: 5px;
     display: block;
     padding: 10px 20px;
-    font-size: 14px; 
-}
-
-.prettyprint {
+    font-size: 14px;
     overflow-x: auto;
 }
+
+/* .prettyprint {
+    overflow-x: auto;
+} */
 
 .prettyprint .tag {
     color: #0daddd;
@@ -98,5 +99,6 @@ pre code {
 .prettyprint .atv {
     color: rgb(92, 233, 92);
 }
-
-
+.prettyprint .com {
+    color: #ec5e33;
+}

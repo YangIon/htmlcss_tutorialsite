@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brief Practical Crash Course in HTML/CSS</title>
-    <link rel="stylesheet" href="styles/main.css">
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <div class="container">
@@ -38,8 +38,8 @@
 <p>Broadly, here's what HTML consists of and what you will be seeing later when you get to work with it!</p>
 
 <ul>
-<li>HTML is a series of elements that tell an Internet browser how to display your content</li>
-<li>Every element is represented by special <strong>tags</strong> which we will get to learn about mroe in-depth later</li>
+<li>HTML is a series of semantic elements that tell an Internet browser how to display your content</li>
+<li>Every element is represented by special <strong>tags</strong> which we will get to learn about more in-depth later</li>
 <li>Tags label the content that you put onto the webpage</li>
 </ul>
 
@@ -317,22 +317,14 @@
 <p>Let's add two of these elements into our document now. Inside our <code class="prettyprint">&lt;body&gt;</code> element area, we'll add a <code class="prettyprint">&lt;p&gt;</code> enclosing our text and a <code class="prettyprint">&lt;div&gt;</code> enclosing both of these elements.</p>
 
 <pre>
-    <code class="prettyprint">
-
-    </code>
+<code class="prettyprint">
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;p&gt;There can only be one!&lt;&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code>
 </pre>
-
-<figure>
-
-<div class="image-container">
-
-<p><img src="img/glitch_tagsexplained_1.svg" alt="alttext" /></p>
-
-</div>
-
-<figcaption>We now have a 'div' and a 'p' tag in our document</figcaption>
-
-</figure>
 
 <p>You won't be seeing any visible changed when you preview your page, but notice how we're actually putting our <code class="prettyprint">&lt;p&gt;</code> tag inside of the <code class="prettyprint">&lt;div&gt;</code>tag. This is what we call <strong>nesting</strong> and it plays an important part in how our elements interact together, especially as we begin to look at special characteristics of tags called <strong>attributes</strong>.</p>
 
@@ -370,46 +362,39 @@
 
 <p>Due to the nature of Glitch, we actually store a copy of our image file on their databases and we use the copied URL to reference the image in the database. However, in an independent project, we could have also referenced the file in our project itself such as <code class="prettyprint">&lt;img src="img/image.jpg" alt="An Image"&gt;</code> with our file structure looking like this:</p>
 
-<pre>
-    <code>
-    project
+<pre><code>    project
     |   README.md 
     |   index.html
     |   script.js
     |   style.css
     |   img/
     ----|   image.jpg
-    </code>
-</pre>
+</code></pre>
 
-<p>If you are interested in seeing how you can set this up in Glitch, read the <a href="">Referencing Image Files Locally in Glitch</a> section; otherwise, feel free to move on to the next section!</p>
 
-<p>I won't go into much further detail about directories and file structure since that isn't our focus right now. However, I'm hoping you can see HTML attributes at play when we use them in our <code class="prettyprint">&lt;img&gt;</code> tag. In this case, we are using attributes to specify what image is displayed when we use <code class="prettyprint">&lt;img&gt;</code> in our HTML.</p>
+If you are interested in seeing how you can set this up in Glitch, read the [Referencing Image Files Locally in Glitch]() section; otherwise, feel free to move on to the next section!
 
-<p>Notice too that our <code class="prettyprint">&lt;img&gt;</code> element is now parented by the <code class="prettyprint">&lt;div&gt;</code> element and is a child of it as well alongside our <code class="prettyprint">&lt;p&gt;</code> element. We can also think of the <code class="prettyprint">&lt;div&gt;</code> as <em>containing</em> these other elements so that it forms a kind of functional grouping of them. When it comes to styling our page with CSS, we'll use these groupings to style multiple sections at once.</p>
+I won't go into much further detail about directories and file structure since that isn't our focus right now. However, I'm hoping you can see HTML attributes at play when we use them in our <code class="prettyprint">&lt;img&gt;</code> tag. In this case, we are using attributes to specify what image is displayed when we use <code class="prettyprint">&lt;img&gt;</code> in our HTML.
 
-<h3>Referencing Image Files Locally in Glitch</h3>
+Notice too that our <code class="prettyprint">&lt;img&gt;</code> element is now parented by the <code class="prettyprint">&lt;div&gt;</code> element and is a child of it as well alongside our <code class="prettyprint">&lt;p&gt;</code> element. We can also think of the <code class="prettyprint">&lt;div&gt;</code> as _containing_ these other elements so that it forms a kind of functional grouping of them. When it comes to styling our page with CSS, we'll use these groupings to style multiple sections at once.
 
-<p>There is a command terminal in Glitch from which we can run useful program commands from. One we will use specifically to create a local folder in our project is <code>mkdir</code> which will allow us to create a directory/folder in in our project.</p>
+### Referencing Image Files Locally in Glitch
 
-<p>You can access the terminal by selecting <strong><em>Tools</em></strong> in the bottom left of your screen. Once you have the panel open, select <strong><em>Terminal</em></strong> and a new panel should open up presenting you with the terminal interface.</p>
+There is a command terminal in Glitch from which we can run useful program commands from. One we will use specifically to create a local folder in our project is `mkdir` which will allow us to create a directory/folder in in our project.
 
-<figure>
+You can access the terminal by selecting **_Tools_** in the bottom left of your screen. Once you have the panel open, select **_Terminal_** and a new panel should open up presenting you with the terminal interface.
 
-<div class="image-container">
-
-<p><img src="img/glitch_terminal.svg" alt="alt text" />
-<img src="img/glitch_terminal_open.svg" alt="alt text" /></p>
-
+<figure markdown="1">
+<div class="image-container" markdown="1">
+![alt text](img/glitch_terminal.svg)
+![alt text](img/glitch_terminal_open.svg)
 </div>
-
 <figcaption>The Glitch command terminal</figcaption>
-
 </figure>
 
-<p>I will use a sample Android image for example. After uploading, the Android image to <code>assets/</code>, I copy the URL like I did in the previous section.</p>
+I will use a sample Android image for example. After uploading, the Android image to `assets/`, I copy the URL like I did in the previous section.
 
-<p>Now run the following code to create a local <code>img/</code> folder so that we can upload image files to this new folder:</p>
+Now run the following code to create a local `img/` folder so that we can upload image files to this new folder:
 
 <pre>
     <code class="prettyprint">
@@ -699,6 +684,174 @@
 &lt;/form&gt;
 </code>
 </pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_contact_2.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>A text input with a label attached to it</figcaption>
+
+</figure>
+
+<p>I've introduced a new <code>id</code> attribute between the <code class="prettyprint">&lt;label&gt;</code> and <code class="prettyprint">&lt;input&gt;</code>. This will allow us to relate the two elements to each other in the <code class="prettyprint">&lt;form&gt;</code>. However, we will come to see that <code>id</code>s play a much larger role in styling and associating our styles with those elements. </p>
+
+<p>For now, you can think of the <code>id</code> attribute as giving a <strong>unique</strong> name to our element. That is, no two elements should have the same <code>id</code> if we choose to assign them. Our text input has a unique name of <strong>full-name-id</strong>. </p>
+
+<h3>Email Inputs</h3>
+
+<p>We'll need some way to keep in contact with the user. Email works--as long as it's not spam! We can insert an email input using this code:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;!-- Inside of the form; remainder of code above --&gt;
+&lt;label for="email-id"&gt;Email:&lt;/label&gt;
+&lt;input id="email-id" name="email" type="email" placeholder="yang@example.com" /&gt;
+...
+</code>
+</pre>
+
+<p>This looks eerily similar to what we did before for our text input. Really, you can think of the email input as another text input that <em>validates</em> whether or not what the user wrote inside of it is an email address (e.g. yang@example.com).</p>
+
+<p>If you're working with Chrome or Safari, then you will only see this validation pop up when we <strong><em>Submit</em></strong> our form. It's similar to when you forget to write your name in an online form, attempt to submit it, only to find an ominous red box pop up on your screen with a message like <em>'Please type in your name here.'</em> </p>
+
+<p>However, for the sake of understanding why clean inputs are important, you can think about the value of having in-built validation like this. If we were to default to a regular text input instead of using <code>type="email"</code>, then a user could accidentally send a non-email address like <em>bademailexample.com</em> or random characters to our server.</p>
+
+<p>Email's not the only validation you can apply to your <code class="prettyprint">&lt;input&gt;</code> tags. The Mozilla Developer Network has a bunch of other useful validation methods that you can read about in the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">&lt;input/&gt; reference</a>.</p>
+
+<p>Also, I've added a new <code>placeholder</code> attribute inside of the tag. You might come across faded text pre-populating web form fields. The <code>placeholder</code> attribute is exactly that. It's some default text that you can have in the field to help the user understand what to type in.</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_contact_3.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>An email input with 'placeholder' value</figcaption>
+
+</figure>
+
+<h3>Radio Buttons</h3>
+
+<p>Let's say we need the user to choose between a set of predefined options in our form. This is a perfect use case for radio buttons. In our project, we're having the user select their class year.</p>
+
+<p>Radio buttons are declared individually by making an <code class="prettyprint">&lt;input&gt;</code> with <code>type="radio"</code>. </p>
+
+<p>Radio buttons work in an interesting way in that they have to be grouped together in order to function properly. We can perform this grouping by nesting each of our <code class="prettyprint">&lt;input&gt;</code> tags inside of a <code class="prettyprint">&lt;fieldset&gt;</code> element, labeled with a <code class="prettyprint">&lt;legend&gt;</code>. The <code class="prettyprint">&lt;legend&gt;</code> will label the overall group of radio buttons.</p>
+
+<p>Another key idea in grouping our radio button elements is that we will assign the same <code>name</code> attribute to all of them.</p>
+
+<pre>
+<code class="prettyprint">
+&lt;!-- Inside of the form; remainder of the code above --&gt;
+&lt;fieldset&gt;
+    &lt;legend&gt;Class Year&lt;/legend&gt;
+    &lt;input type="radio" id="year1" value="2020" name="class-year" /&gt;
+    &lt;label for="year1"&gt;2020&lt;/label&gt;
+    &lt;input type="radio" id="year2" value="2021" name="class-year" /&gt;
+    &lt;label for="year2"&gt;2021&lt;/label&gt;
+    &lt;input type="radio" id="year3" value="2022" name="class-year" /&gt;
+    &lt;label for="year3"&gt;2022&lt;/label&gt;
+    &lt;input type="radio" id="year4" value="2023" name="class-year" /&gt;
+    &lt;label for="year4"&gt;2023&lt;/label&gt;
+&lt;/fieldset&gt;
+...
+</code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_contact_4.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>Our radio button group with labels and legend</figcaption>
+
+</figure>
+
+<p>Try clicking on each button to see that it works! You should only be able to select one value at a time just as a radio button should work.</p>
+
+<h3>Textareas</h3>
+
+<p>We don't leave a lot of room for a user to express themselves with one line of text. So why not multiple lines of text? We can use the <code class="prettyprint">&lt;textarea&gt;</code> tag to create a multiline text field for the user to berate these pitiful creative souls.</p>
+
+<p>There are two special attributes associated with the <code class="prettyprint">&lt;textarea&gt;</code> element which are <code>rows</code> and <code>cols</code>. As the names suggest, these will adjust the respective width and height of our <code class="prettyprint">&lt;textarea&gt;</code>. In CSS, we will learn how to replace these in-line attributes with more flexible dimension specs. For now, we will use them to our heart's content.</p>
+
+<pre>
+<code class="prettyprint">
+&lt;!-- Inside of the form; remainder of the code above --&gt;
+&lt;label for="message-id"&gt;Message:&lt;/label&gt;
+&lt;textarea id="message-id" name="message" rows="5" cols="30"&gt;
+&lt;/textarea&gt;
+...
+</code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_contact_5.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>Our textarea with rows and columns specified</figcaption>
+
+</figure>
+
+<h3>Submit!</h3>
+
+<p>Submit this, submit that. Why does this man keep telling me about <strong><em>Submit</em></strong>? </p>
+
+<p>We're at the last component of our form which is the submit element which will appear in the form of a <code class="prettyprint">&lt;button&gt;</code> element. </p>
+
+<p>Do you remember the <code>action</code> attribute when we first started writing our <code class="prettyprint">&lt;form&gt;</code>? <strong>Fun fact:</strong> If we nest a <code class="prettyprint">&lt;button&gt;</code> inside of a <code class="prettyprint">&lt;form&gt;</code>, we can actually trigger that <code>action</code> by clicking the <code class="prettyprint">&lt;button&gt;</code> element.</p>
+
+<p>When we submit our form with this <code class="prettyprint">&lt;button&gt;</code>, the browser will make sure all of our <code class="prettyprint">&lt;input&gt;</code> elements are valid and then submit our information to the URL provided in <code>action</code>.</p>
+
+<p>Let's add the button now:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;!-- Inside of the form; remainder of the code above --&gt;
+&lt;button&gt;Submit&lt;/button&gt;
+...
+</code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/section_contact_6.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>Our submit button with the remainder of our contact form</figcaption>
+
+</figure>
+
+<p>I want you to try pressing the button right now after filling in some of the boxes with valid inputs, then take a look at your browser URL. You should find something like follows:</p>
+
+<pre><code>...glitch.me/?full-name=Yang&amp;email=yang%40example.com&amp;class-year=2022&amp;message=message
+</code></pre>
+
+<p>Your inputs will vary depending on what you wrote and selected, but I want you to pay special attention to what follows each <code>?</code>. It's the <code>name</code> attributes of our <code class="prettyprint">&lt;input&gt;</code> elements with everything we wrote in them! </p>
+
+<p>We can see this information because we set our <code class="prettyprint">&lt;form&gt;</code> to use the <code>get</code> method. In a full web application, our backend would be able to access this information and use it however our application needs to. That's the magic of forms!</p>
+
+<p>So here's the thing. We've made it through to the end of our HTML. And, well, it could use a little touch-up to say the least. Honestly, who would ever design such a tacky website? *cough*</p>
+
+<p>Now we're done with our sketches and we're ready to take up the paint brush. We're getting into the design flow, the art, the creative bloom of web development.</p>
+
+<p>We're getting into CSS.</p>
 
 
 
