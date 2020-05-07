@@ -167,7 +167,6 @@ html, body {
     color: white;
     visibility: hidden;
     transition: visibility .25s ease-in-out;
-
 }
 
 .element-card > img {
@@ -176,6 +175,7 @@ html, body {
     height: 220px;
     width: 300px; 
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 @media only screen and (min-width: 800px) {
@@ -208,6 +208,8 @@ html, body {
     padding: 5px;
     margin: 0;
     box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 @media only screen and (max-width: 1024px) {
