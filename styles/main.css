@@ -102,3 +102,9 @@ pre code {
 .prettyprint .com {
     color: #ec5e33;
 }
+.prettyprint .pun {
+    color: gold;
+}
+.prettyprint .lit {
+    color: #0dad;
+}

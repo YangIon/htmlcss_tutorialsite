@@ -253,12 +253,12 @@
 <p>For now, let's try changing the text in the title tag to <strong>My Portfolio</strong> and writing whatever we want in the area bounded by <code class="prettyprint">&lt;body&gt;...&lt;/body&gt;</code></p>
 
 <pre>
-    <code class="prettyprint">
-    &lt;title&gt;My Portfolio&lt;/title&gt;
-    ...
-    &lt;body&gt;
-        <em>Insert my text here</em>
-    &lt;/body&gt;
+<code class="prettyprint">
+&lt;title&gt;My Portfolio&lt;/title&gt;
+...
+&lt;body&gt;
+<em>Insert my text here</em>
+&lt;/body&gt;
     </code>
 </pre>
 
@@ -277,10 +277,10 @@
 <p>As our project grows, it might become difficult to keep track of what each element is doing. In many programming languages, we have the ability to write <strong>comments</strong> or lines which do not get interpreted as code by the compiler and are solely for user documentation.</p>
 
 <pre>
-    <code class="prettyprint">
-    &lt;body&gt;
-    &lt;!-- This is an example of a comment! --&gt;
-    &lt;/body&gt;
+<code class="prettyprint">
+&lt;body&gt;
+&lt;!-- This is an example of a comment! --&gt;
+&lt;/body&gt;
     </code>
 </pre>
 
@@ -338,7 +338,7 @@
         &lt;p&gt;There can only be one!&lt;&gt;
     &lt;/div&gt;
 &lt;/body&gt;
-</code>
+    </code>
 </pre>
 
 <p>You won't be seeing any visible changed when you preview your page, but notice how we're actually putting our <code class="prettyprint">&lt;p&gt;</code> tag inside of the <code class="prettyprint">&lt;div&gt;</code>tag. This is what we call <strong>nesting</strong> and it plays an important part in how our elements interact together, especially as we begin to look at special characteristics of tags called <strong>attributes</strong>.</p>
@@ -412,11 +412,11 @@ I will use a sample Android image for example. After uploading, the Android imag
 Now run the following code to create a local `img/` folder so that we can upload image files to this new folder:
 
 <pre>
-    <code class="prettyprint">
-    $ mkdir img
-    $ cd img
-    $ wget -O <em>new_file_name android_URL</em>
-    $ refresh
+<code class="prettyprint">
+$ mkdir img
+$ cd img
+$ wget -O <em>new_file_name android_URL</em>
+$ refresh
     </code>
 </pre>
 
@@ -479,7 +479,7 @@ Now run the following code to create a local `img/` folder so that we can upload
         &lt;p&gt;<em> Catchy phrase goes here </em>&lt;/p&gt;
     &lt;/section&gt;
 &lt;/body&gt;
-</code>
+    </code>
 </pre>
 
 <figure>
@@ -514,7 +514,7 @@ Now run the following code to create a local `img/` folder so that we can upload
         &lt;p&gt;<em> Write your blurb here </em>&lt;/p&gt;
     &lt;/section&gt;
 &lt;/body&gt;
-</code>
+    </code>
 </pre>
 
 <figure>
@@ -549,7 +549,7 @@ Now run the following code to create a local `img/` folder so that we can upload
         &lt;a href=<em>"Link here"</em>&gt;Contact Me&lt;/a&gt;
     &lt;/nav&gt;
 &lt;/body&gt;
-</code>
+    </code>
 </pre>
 
 <figure>
@@ -597,7 +597,7 @@ Now run the following code to create a local `img/` folder so that we can upload
     &lt;/div&gt;
 &lt;/section&gt;
 ...
-</code>
+    </code>
 </pre>
 
 <p>If you are using the image links, don't forget to import these images into the <code>assets/</code> folder and use the image URLs in the <code>src</code> attribute of your <code class="prettyprint">&lt;img&gt;</code> tags. </p>
@@ -631,7 +631,7 @@ Now run the following code to create a local `img/` folder so that we can upload
 &lt;section&gt;
     &lt;h2&gt;Let's get in touch!&lt;/h2&gt;
 &lt;/section&gt;
-</code>
+    </code>
 </pre>
 
 <p>We're now at the final step of laying down all our HTML with HTML forms.</p>
@@ -646,7 +646,7 @@ Now run the following code to create a local `img/` folder so that we can upload
 <code class="prettyprint">
 &lt;form action='' method="get"&gt;
 &lt;/form&gt;
-</code>
+    </code>
 </pre>
 
 <p>The <code>action</code> attribute points to a URL that processes all the information we write in our form. Developers will set up special URLs in a web server to be able to deal with this information in a way that fits with the application they are building. However, we leave this blank in order to redirect back to the page we are on when we <strong><em>Submit</em></strong> our information since we are not dealing with any backend technologies.</p>
@@ -672,7 +672,7 @@ Now run the following code to create a local `img/` folder so that we can upload
 &lt;form&gt;
     &lt;input name="full-name" type="text" /&gt;
 &lt;/form&gt;
-</code>
+    </code>
 </pre>
 
 <figure>
@@ -697,7 +697,7 @@ Now run the following code to create a local `img/` folder so that we can upload
     &lt;label for="full-name-id"&gt;Name:&lt;/label&gt;
     &lt;input id="full-name-id" name="full-name" type="text" /&gt;
 &lt;/form&gt;
-</code>
+    </code>
 </pre>
 
 <figure>
@@ -726,7 +726,7 @@ Now run the following code to create a local `img/` folder so that we can upload
 &lt;label for="email-id"&gt;Email:&lt;/label&gt;
 &lt;input id="email-id" name="email" type="email" placeholder="yang@example.com" /&gt;
 ...
-</code>
+    </code>
 </pre>
 
 <p>This looks eerily similar to what we did before for our text input. Really, you can think of the email input as another text input that <em>validates</em> whether or not what the user wrote inside of it is an email address (e.g. yang@example.com).</p>
@@ -776,7 +776,7 @@ Now run the following code to create a local `img/` folder so that we can upload
     &lt;label for="year4"&gt;2023&lt;/label&gt;
 &lt;/fieldset&gt;
 ...
-</code>
+    </code>
 </pre>
 
 <figure>
@@ -806,7 +806,7 @@ Now run the following code to create a local `img/` folder so that we can upload
 &lt;textarea id="message-id" name="message" rows="5" cols="30"&gt;
 &lt;/textarea&gt;
 ...
-</code>
+    </code>
 </pre>
 
 <figure>
@@ -838,7 +838,7 @@ Now run the following code to create a local `img/` folder so that we can upload
 &lt;!-- Inside of the form; remainder of the code above --&gt;
 &lt;button&gt;Submit&lt;/button&gt;
 ...
-</code>
+    </code>
 </pre>
 
 <figure>
@@ -855,8 +855,9 @@ Now run the following code to create a local `img/` folder so that we can upload
 
 <p>I want you to try pressing the button right now after filling in some of the boxes with valid inputs, then take a look at your browser URL. You should find something like follows:</p>
 
-<pre><code>...glitch.me/?full-name=Yang&amp;email=yang%40example.com&amp;class-year=2022&amp;message=message
-</code></pre>
+<pre><code> ...glitch.me/?full-name=Yang&email=yang%40example.com&class-year=2022&message=message
+</code>
+</pre>
 
 <p>Your inputs will vary depending on what you wrote and selected, but I want you to pay special attention to what follows each <code>?</code>. It's the <code>name</code> attributes of our <code class="prettyprint">&lt;input&gt;</code> elements with everything we wrote in them! </p>
 
@@ -867,6 +868,148 @@ Now run the following code to create a local `img/` folder so that we can upload
 <p>Now we're done with our sketches and we're ready to take up the paint brush. We're getting into the design flow, the art, the creative bloom of web development.</p>
 
 <p>We're getting into CSS.</p>
+
+<hr />
+
+<h2>Introducing CSS</h2>
+
+<p>Design and visual style are their own separate components altogether in any project. While we explored HTML on its own in the preceding sections, we're entering into a new language which will allow us to manipulate the style aspect of our web page. In web development, this is called CSS, or Cascading Style Sheets.</p>
+
+<p>I mentioned it briefly before, but these are just a few of the things that CSS allows us to achieve as we style our project:</p>
+
+<ul>
+<li>Element Positioning and Proportional Positioning</li>
+<li>Element Sizing</li>
+<li>Colors</li>
+<li>Font Styling</li>
+<li>Margins and Padding</li>
+</ul>
+
+<p>As we develop our project, you will be able to notice several elements of CSS coming together towards what we envision from a creative perspective.</p>
+
+<h2>Implementing CSS: Inline, Internal, External</h2>
+
+<h3>Inline</h3>
+
+<p>We will continue using the project we've been working on already. The project directory setup that we have now gives us a convenient gateway into setting up CSS in our project.</p>
+
+<p><em>Inline</em> CSS refers to writing CSS inside of an HTML element using its default <code>style</code> attribute. Let's take a look at our <code class="prettyprint">&lt;body&gt;</code> tag and add the <code>style</code> attribute to it with <code>"color: red;"</code> as its value:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;body style="color: red;"&gt;
+    </code>
+</pre>
+
+<p>All of our text aside from the main heading should be red now:</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/inline_css.svg" alt="alt text" /></p>
+
+</div>
+
+<figcaption>Using inline CSS to change the text color</figcaption>
+
+</figure>
+
+<p>This application of CSS seems fairly intuitive. It's like we're saying the <code class="prettyprint">&lt;body&gt;</code> element and <strong>everything inside it</strong> should take the <strong>color property of red</strong>.</p>
+
+<p>Our small example highlights a powerful <strong>inheritance</strong> property of CSS. Styles that apply to elements wrapping children or descendent elements will also be applied to these children or descendent elements. However, we'll see that we can also apply new stylings to our descendent elements that can override the style inherited by the wrapping elements.</p>
+
+<p>Let's change the color property of our 'About' blurb to blue and make the font a little bigger using the <strong>font-size</strong> CSS property. </p>
+
+<pre>
+<code class="prettyprint">
+&lt;section&gt;
+    &lt;p style="color: blue; font-size: 25px;"&gt;
+        My name is Yang Chen...
+    &lt;/p&gt;
+&lt;/section&gt;
+    </code>
+</pre>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/inline_css_1.svg" alt="about section inline css" /></p>
+
+</div>
+
+<figcaption>Our descendent 'p' element with specific styling should be different from the inherited styling</figcaption>
+
+</figure>
+
+<p>While we inherited the color red from the <code class="prettyprint">&lt;body&gt;</code> element we were able to override it by applying a specific style to our <code class="prettyprint">&lt;p&gt;</code> descendent element. </p>
+
+<p>Another important point is that we don't have to apply only one property to an element. We can apply <strong>multiple</strong> properties at once by separating each property with a semicolon (<code>;</code>). This is the power of CSS, being able to extend many style properties at once to many different elements on our webpage.</p>
+
+<h3>Internal</h3>
+
+<p>In practice, we should only rarely use inline styling if at all. We'll look later at why it's not the best idea to write the majority of our styling with inline, aside from the obvious difficulty it presents having to read it as we develop.</p>
+
+<p>An alternative is to style this page with an <strong>internal</strong> stylesheet in our document. Here I'm introducing a new <code class="prettyprint">&lt;style&gt;</code> element that goes inside our <code class="prettyprint">&lt;head&gt;</code> element since it is considered metadata for our webpage. Everything inside of the <code class="prettyprint">&lt;style&gt;</code> element will be interpreted as CSS by browsers.</p>
+
+<p>I will rewrite the styles we have applied so far in this new format after removing the inline styles:</p>
+
+<pre>
+<code class="prettyprint">
+&lt;head&gt;
+    ...
+    &lt;style&gt;
+        body {
+           color: red; 
+        }
+
+        p {
+           color: blue;
+           font-size: 25px; 
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+    </code>
+</pre>
+
+<p>This method proves to be a lot more convenient than working with inline styles since we can more effectively style our whole page from one place rather than look at each individual element. However, there is one more method that is extensible to multiple web pages if the need arises: <strong>external</strong> stylesheets. This will also keep our HTML and CSS code separate from one another so we can focus on each independently.</p>
+
+<h3>External</h3>
+
+<p>We can create a CSS external stylesheet by making a new text file with the extension <code>.css</code>. In your Glitch environment, you should see a file already called <code>style.css</code> with a few lines already written inside of it:</p>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/external_css.svg" alt="external css stylesheet" /></p>
+
+</div>
+
+<figcaption>An external stylesheet inside your Glitch environment</figcaption>
+
+</figure>
+
+<p>Here are the basic principles for writing CSS in this stylesheet, some of which you've come across already with inline and internal styling:</p>
+
+<ul>
+<li>A "rule" begins with a <strong style="color: pink">selector</strong> that connects our style properties to an element. An example of this is when we write <code>body</code></li>
+<li>All of our properties will go inside a <strong style="color: blue">"block"</strong> that is denoted by an opening and closing set of curly braces</li>
+<li>Any properties we write inside of the block must be followed by a colon (<code>:</code>) and the value that property will take--we might refer to this as a <strong style="color: green">"key-value"</strong> relationship where a key is associated with some value we specify</li>
+</ul>
+
+<figure>
+
+<div class="image-container">
+
+<p><img src="img/external_css_explained.svg" alt="external stylesheet explained" /></p>
+
+</div>
+
+<figcaption>Breakdown of writing CSS in an external stylesheet</figcaption>
+
+</figure>
 
 
 
